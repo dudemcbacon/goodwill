@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+require 'highline/import'
+require 'table_print'
+require 'thor'
+require 'pry'
+
+require 'goodwill'
+
+# Exit cleanly from an early interrupt
+Signal.trap('INT') { exit 1 }
+
+require 'goodwill/cli'
+
+Goodwill::CLI.start(ARGV, debug: true)
