@@ -8,10 +8,11 @@ Gem::Specification.new do |spec|
   spec.version       = Goodwill::VERSION
   spec.authors       = ['Brandon Burnett']
   spec.email         = ['gentoolicious@gmail.com']
+  spec.license       = 'MIT'
 
-  spec.summary       = 'TODO: Write a short summary, because Rubygems requires one.'
-  spec.description   = 'TODO: Write a longer description or delete this line.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'Basic auction management for ShopGoodwil.com'
+  spec.description   = 'Allows you to perform basic auction management, bidding, and searching from ruby.'
+  spec.homepage      = 'https://github.com/dudemcbacon/goodwill'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -27,11 +28,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
-  spec.add_dependency 'highline'
-  spec.add_dependency 'mechanize'
-  spec.add_dependency 'pry'
-  spec.add_dependency 'table_print'
-  spec.add_dependency 'thor'
+  spec.add_development_dependency 'rspec', '~> 3.3'
+  spec.add_development_dependency 'rubocop', '~> 0.34'
+  spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_dependency 'highline', '~> 1.7'
+  spec.add_dependency 'mechanize', '~> 2.7'
+  spec.add_dependency 'table_print', '~> 1.5'
+  spec.add_dependency 'thor', '~> 0.19'
 end

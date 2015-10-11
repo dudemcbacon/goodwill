@@ -29,5 +29,9 @@ module Goodwill
       @seller = item_page.search(SELLER_PATH).text
       @bidding = false
     end
+
+    def ==(another_auction)
+      self.itemid == another_auction.itemid
+    end
   end
 end

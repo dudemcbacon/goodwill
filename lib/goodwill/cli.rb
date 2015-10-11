@@ -1,3 +1,5 @@
+require 'thor'
+
 module Goodwill
   class CLI < Thor
     class_option :verbose, type: :boolean

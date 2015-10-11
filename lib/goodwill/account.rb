@@ -12,7 +12,7 @@ module Goodwill
     IN_PROG = 'https://www.shopgoodwill.com/buyers/myShop/AuctionsInProgress.asp'
     PER_PAGE = 25
 
-    attr_reader :username, :password, :logged_in
+    attr_reader :username, :password
 
     def initialize(username, password = '')
       @username  = username
