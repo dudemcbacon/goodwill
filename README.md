@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/goodwill.svg)](https://badge.fury.io/rb/goodwill)
+[![Build Status](https://travis-ci.org/dudemcbacon/goodwill.svg?branch=master)](https://travis-ci.org/dudemcbacon/goodwill)
 [![Code Climate](https://codeclimate.com/github/dudemcbacon/goodwill/badges/gpa.svg)](https://codeclimate.com/github/dudemcbacon/goodwill)
 
 # Goodwill
