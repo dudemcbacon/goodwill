@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.3'
   spec.add_development_dependency 'rubocop', '~> 0.34'
   spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_development_dependency 'travis'
   spec.add_dependency 'parallel', '~> 1.6'
   spec.add_dependency 'highline', '~> 1.7'
   spec.add_dependency 'mechanize', '~> 2.7'

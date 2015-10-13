@@ -1,4 +1,11 @@
 language: ruby
 rvm:
-  - 2.2.0
+- 2.2.0
 before_install: gem install bundler -v 1.10.3
+deploy:
+  provider: rubygems
+  api_key:
+    secure: MkqvoDj4stV7TJSDJqiGPSplrVbFqXPkwsbibe5Q4uGOW2elWDisTKXfRltzNYsh9x77cbUHuQda/HCB5C/SPBVrd+fLs5h5q/dQHrOdDwmGwWjko1zQFgyfGATzmc8STtPGRt+dDamcMOeGv27jmWCavE2bQxCzX1dvrlKL6xBLZbOuCXg4BTtb0R4clU3pWpi2JEIeMA4Fu6xobY9Ovl9nLxYQTY4GuFOeI/q5AWvslpY5cfC42jV8GxeEpjolywt0MErRqI7Ef8u9IP0GFm+hV34WLo6TDYOTPHIFmvHDOLSFcIdPoRw2IHWnfYr3eVlLk+1LbnpGsdNz3CZSGgDu0e1YfoYfR4vAYhNGNfNatCuu/bXkb1Akl2xoC4WRKG5pTjJyf6Ap+Iu+BnOSp0AFXRIqXJRUUKVYxjnQbOG001DaMPRCVMF/wF6N5j7CtgmDNC1NbNpiQlFZHDQP5W1c3IsqU6j/+jph9If2iEbnjd7iwwaBVZyaM4CCAcAMqmUxvin+HNmY7rlgaDm9dvF3O3Dg1QGWI3IX4Bo1LXoH19jVDcaizOnQb+6QqM8Zg8nxYEh5y8m5NGvZWY7Q3b9i5aZTfNkDZ8tmbYE2xT4pYrs1X1CDjr1ltIV8QtKMdY3BmsvIVGNMuXEs8v+gCDDIN8rLB6KrywSgUxp47Js=
+  gem: goodwill
+  on:
+    repo: dudemcbacon/goodwill
