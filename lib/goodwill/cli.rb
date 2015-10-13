@@ -8,7 +8,7 @@ module Goodwill
 
     def initialize(*args)
       super
-      return unless args[2][:current_command].name == 'help'
+      return if args[2][:current_command].name == 'help'
 
       username = options[:username] || ask('Username:')
       password = options[:password] || ask('Password:') { |q| q.echo = false }

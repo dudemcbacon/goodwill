@@ -3,6 +3,7 @@ require 'goodwill/mechanize'
 require 'goodwill/urlpaths'
 
 require 'mechanize'
+require 'parallel'
 
 module Goodwill
   class Account
@@ -12,18 +13,19 @@ module Goodwill
     IN_PROG = 'https://www.shopgoodwill.com/buyers/myShop/AuctionsInProgress.asp'
     PER_PAGE = 25
 
-    attr_reader :username, :password
+    attr_reader :username, :password, :threads
 
-    def initialize(username, password = '')
+    def initialize(username, password = '', threads = 10)
       @username  = username
       @password  = password
+      @threads   = threads
       Goodwill::Mechanize.username = @username
       Goodwill::Mechanize.password = @password
     end
 
     def in_progress
       in_progress_page = mechanize.get(IN_PROG)
-      in_progress_page.search('table.mySG tbody tr').map do |row|
+      Parallel.map(in_progress_page.search('table.mySG tbody tr'), in_threads: @threads) do |row|
         Goodwill::BiddingAuction.new(itemid_from_open_order_row(row), mechanize)
       end
     end
@@ -32,7 +34,7 @@ module Goodwill
       search_page = mechanize.get(SEARCH_URL + itemTitle)
       pages(total_items(search_page)).times.map do |i|
         search_page = search_page.link_with(text: 'Next').click unless i == 0
-        search_page.search('table.productresults tbody > tr').map do |row|
+        Parallel.map(search_page.search('table.productresults tbody > tr'), in_threads: @threads) do |row|
           Goodwill::Auction.new(itemid_from_search_row(row))
         end
       end.flatten
