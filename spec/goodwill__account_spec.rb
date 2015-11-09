@@ -14,7 +14,10 @@ describe Goodwill::Account do
     allow(@account.mechanize).to receive(:get).with(IN_PROG).and_return(in_prog_cont)
     [ '24710437', '24763462', '24765885', '24766011'].each do |itemid|
       content = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
+      shipping = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
+      params = "?itemid=#{itemid}&zip=97222&state=OR&country=United States"
       allow(@account.mechanize).to receive(:get).with(ITEM_SEARCH_URL + itemid).and_return(content)
+      allow(@account.mechanize).to receive(:get).with(SHIPPING_URL + params).and_return(shipping)
     end
   end
 

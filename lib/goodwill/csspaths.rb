@@ -8,5 +8,6 @@ module Goodwill
     ITEMID_PATH = 'body > span > div.itemdetail > div:nth-child(2) > div:nth-child(2) > div > table > tbody > tr:nth-child(3) > td'
     ITEM_TITLE_PATH = '#title > span'
     SELLER_PATH = 'body > span > div.itemdetail > div:nth-child(2) > div:nth-child(2) > div > table > tr:nth-child(7) > td > b'
+    SHIPPING_PATH = 'body > center > table > tr:nth-child(8) > td:nth-child(2)'
   end
 end
