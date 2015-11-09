@@ -40,6 +40,12 @@ module Goodwill
       self.itemid == another_auction.itemid
     end
 
+    def to_hash
+      hash = {}
+      instance_variables.each {|var| hash[var.to_s.delete("@")] = instance_variable_get(var) }
+      hash
+    end
+
     private
 
     def calculate_shipping(itemid, zipcode, state, country)
