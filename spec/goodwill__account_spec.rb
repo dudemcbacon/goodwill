@@ -6,14 +6,12 @@ IN_PROG = 'https://www.shopgoodwill.com/buyers/myShop/AuctionsInProgress.asp'
 include Goodwill::URLPaths
 
 describe Goodwill::Account do
-
-
   describe '#bid' do
     before do
       @account = Goodwill::Account.new('pants', 'pantspass')
     end
 
-    it "should be able to bid on auctions"
+    it 'should be able to bid on auctions'
   end
 
   describe '#in_progress' do
@@ -22,7 +20,7 @@ describe Goodwill::Account do
       @account = Goodwill::Account.new('pants', 'pantspass')
       in_prog_cont = mech.get('file:///' + File.expand_path('./spec/fixtures/in_progress.html'))
       allow(@account.mechanize).to receive(:get).with(IN_PROG).and_return(in_prog_cont)
-      [ '24710437', '24763462', '24765885', '24766011'].each do |itemid|
+      %w(24710437 24763462 24765885 24766011).each do |itemid|
         content = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
         shipping = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
         params = "?itemid=#{itemid}&zip=97222&state=OR&country=United States"
@@ -31,7 +29,7 @@ describe Goodwill::Account do
       end
     end
 
-    it "should be able to get a list of auctions in progress" do
+    it 'should be able to get a list of auctions in progress' do
       auctions = YAML.load(File.open('./spec/fixtures/auctions.yaml'))
 
       result = @account.in_progress
@@ -46,7 +44,7 @@ describe Goodwill::Account do
       @account = Goodwill::Account.new('pants', 'pantspass')
       search_cont = mech.get('file:///' + File.expand_path('./spec/fixtures/search_cont.html'))
       allow(@account.mechanize).to receive(:get).with(SEARCH_URL + 'famicom').and_return(search_cont)
-      ['25576979', '25577232'].each do |itemid|
+      %w(25576979 25577232).each do |itemid|
         content = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
         shipping = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
         params = "?itemid=#{itemid}&zip=97222&state=OR&country=United States"
@@ -55,7 +53,7 @@ describe Goodwill::Account do
       end
     end
 
-    it "should be able to search for auctions" do
+    it 'should be able to search for auctions' do
       famicom_auctions = YAML.load(File.open('./spec/fixtures/famicom_search_results.yaml'))
 
       result = @account.search('famicom')
@@ -63,5 +61,4 @@ describe Goodwill::Account do
       expect(result).to eq(famicom_auctions)
     end
   end
-
 end

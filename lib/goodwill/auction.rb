@@ -37,16 +37,16 @@ module Goodwill
     end
 
     def ==(another_auction)
-      self.itemid == another_auction.itemid
+      itemid == another_auction.itemid
     end
 
     def to_hash
       hash = {}
       instance_variables.each do |var|
         if var == :@end
-          hash[var.to_s.delete("@")] = instance_variable_get(var).to_s
+          hash[var.to_s.delete('@')] = instance_variable_get(var).to_s
         else
-          hash[var.to_s.delete("@")] = instance_variable_get(var)
+          hash[var.to_s.delete('@')] = instance_variable_get(var)
         end
       end
       hash
