@@ -4,7 +4,7 @@
 [![Inline docs](http://inch-ci.org/github/dudemcbacon/goodwill.svg?branch=master)](http://inch-ci.org/github/dudemcbacon/goodwill)
 # Goodwill
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/goodwill`. To experiment with that code, run `bin/console` for an interactive prompt.
+Goodwill is a simple web scraper for ShopGoodwill.com. You can query login to your account, view your currently in progress auction, search for items, and even bid on new options. It also includes a small CLI for interacting with ShopGoodwill.com from the command-line.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -26,7 +26,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+gem 'goodwill'
+
+account = Goodwill::Account.new('username', 'password')
+
+pp account.search('famicom')
+[#<Goodwill::Auction:0x007fbf50ec0c18
+  @bidding=false,
+  @bids="8",
+  @current="$66.00",
+  @end="",
+  @href="http://www.shopgoodwill.com/viewItem.asp?itemID=25576979",
+  @item="Two Nintendo Super Famicom Game Consoles 020",
+  @itemid="25576979",
+  @seller="Columbia Goodwill">]
+```
 
 ## Development
 
@@ -36,5 +51,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/goodwill.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/dudemcbacon/goodwill.

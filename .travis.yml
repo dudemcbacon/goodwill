@@ -2,6 +2,9 @@ language: ruby
 rvm:
 - 2.2.0
 before_install: gem install bundler -v 1.10.3
+script:
+  - bundle exec rspec
+  - bundle exec rubocop
 deploy:
   provider: rubygems
   api_key:
