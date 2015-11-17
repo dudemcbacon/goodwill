@@ -1,0 +1,13 @@
+--- !ruby/object:Goodwill::Auction
+itemid: 25508822
+zipcode: '97222'
+state: OR
+country: United States
+href: http://www.shopgoodwill.com/viewItem.asp?itemID=25508822
+bids: '10'
+current: "$411.00"
+end: 11/8/2015 5:43:53 PM PT
+item: New 18K White Gold Emerald & Diamond Ring  (DL)
+seller: Licking/Knox Goodwill Industries, Inc.
+bidding: false
+shipping: "$30.63"
