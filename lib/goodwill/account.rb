@@ -33,8 +33,8 @@ module Goodwill
       end
     end
 
-    def search(itemTitle)
-      search_page = mechanize.get(SEARCH_URL + itemTitle)
+    def search(item_title)
+      search_page = mechanize.get(SEARCH_URL + item_title)
       pages(total_items(search_page)).times.map do |i|
         search_page = search_page.link_with(text: 'Next').click unless i == 0
         Parallel.map(search_page.search('table.productresults tbody > tr'), in_threads: @threads) do |row|
