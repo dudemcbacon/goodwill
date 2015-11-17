@@ -6,6 +6,9 @@ require 'mechanize'
 require 'parallel'
 
 module Goodwill
+  #
+  # Allows for basic account interaction
+  #
   class Account
     include Goodwill::Mechanize
     include URLPaths

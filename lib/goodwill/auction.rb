@@ -5,6 +5,9 @@ require 'goodwill/urlpaths'
 require 'goodwill/mechanize'
 
 module Goodwill
+  #
+  # A ShopGoodwill Auction
+  #
   class Auction
     include Goodwill::Mechanize
     include CSSPaths
@@ -36,8 +39,8 @@ module Goodwill
       @shipping = calculate_shipping(@itemid, @zipcode, @state, @country)
     end
 
-    def ==(another_auction)
-      itemid == another_auction.itemid
+    def ==(other)
+      itemid == other.itemid
     end
 
     def to_hash
