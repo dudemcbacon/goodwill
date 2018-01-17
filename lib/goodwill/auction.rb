@@ -58,9 +58,9 @@ module Goodwill
     private
 
     def calculate_shipping(itemid, zipcode, state, country)
-      params = "?itemid=#{itemid}&zip=#{zipcode}&state=#{state}&country=#{country}"
+      params = "?ZipCode=#{zipcode}&State=#{state}&Country=#{country}&ItemId=#{itemid}&_=#{DateTime.now.strftime('%s')}"
       page = mechanize.get(SHIPPING_URL + params)
-      page.search(SHIPPING_PATH).text.tr('$', '').to_f
+      page.search(SHIPPING_PATH).text.split(": ").last.tr('$', '').to_f
     end
   end
 end

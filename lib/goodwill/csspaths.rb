@@ -2,12 +2,12 @@ module Goodwill
   module CSSPaths
     # Auction Page
     # http://www.shopgoodwill.com/viewItem.asp?itemID=<itemID>
-    BIDS_PATH = '#more_images'
-    CURRENT_PRICE_PATH = 'body > span > div.itemdetail > div:nth-child(2) > div:nth-child(3) > div > table > tr:nth-child(2) > th'
-    END_TIME_PATH = 'body > span > div.itemdetail > div:nth-child(2) > div:nth-child(2) > div > table > tr:nth-child(5) > td'
+    BIDS_PATH = 'body > section > div.container > div:nth-child(3) > div:nth-child(2) > ul.product-data > li:nth-child(3) > span.num-bids'
+    CURRENT_PRICE_PATH = 'body > section > div.container > div:nth-child(3) > div:nth-child(2) > ul.product-data > li:nth-child(4) > span'
+    END_TIME_PATH = '/html/body/section/div[3]/div[3]/div[2]/ul[2]/li[10]/text()'
     ITEMID_PATH = 'body > span > div.itemdetail > div:nth-child(2) > div:nth-child(2) > div > table > tbody > tr:nth-child(3) > td'
-    ITEM_TITLE_PATH = '#title > span'
-    SELLER_PATH = 'body > span > div.itemdetail > div:nth-child(2) > div:nth-child(2) > div > table > tr:nth-child(7) > td > b'
-    SHIPPING_PATH = 'body > center > table > tr:nth-child(8) > td:nth-child(2)'
+    ITEM_TITLE_PATH = 'body > section > div.container > div:nth-child(3) > div:nth-child(2) > h1'
+    SELLER_PATH = 'body > section > div.container > div:nth-child(3) > div:nth-child(2) > ul.product-data > li:nth-child(8) > a'
+    SHIPPING_PATH = 'body > p:nth-child(7) > b'
   end
 end

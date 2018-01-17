@@ -16,6 +16,7 @@ module Goodwill
     attr_reader :item
     attr_reader :itemid
     attr_reader :seller
+    attr_reader :shipping
 
     def initialize(itemid, mechanize)
       super(itemid)
@@ -23,8 +24,10 @@ module Goodwill
       if order_page.link_with(text: regqt(itemid.to_s))
         @bidding = true
         row = order_page.link_with(text: regqt(itemid.to_s)).node.parent.parent
-        @winning = happy?(row.search('img').attr('src').value)
-        @max = row.search('td:nth-child(5)').text
+        require 'pry'
+        binding.pry
+        @winning = !row.search('td:nth-child(5) > i').empty?
+        @max = row.search('td:nth-child(5)').text.tr("\r\n","").tr(" ","").tr("$","")
       else
         @bidding = false
         @winning = false
@@ -36,10 +39,6 @@ module Goodwill
 
     def regqt(itemid)
       /#{Regexp.quote(itemid.to_s)}/
-    end
-
-    def happy?(src)
-      src.include?('happy')
     end
   end
 end

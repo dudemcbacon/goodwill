@@ -13,7 +13,6 @@ module Goodwill
     include Goodwill::Mechanize
     include URLPaths
 
-    IN_PROG = 'https://www.shopgoodwill.com/buyers/myShop/AuctionsInProgress.asp'
     PER_PAGE = 25
 
     attr_reader :username, :password, :threads
@@ -27,8 +26,8 @@ module Goodwill
     end
 
     def in_progress
-      in_progress_page = mechanize.get(IN_PROG)
-      Parallel.map(in_progress_page.search('table.mySG tbody tr'), in_threads: @threads) do |row|
+      in_progress_page = mechanize.get(OPEN_ORDERS_URL)
+      Parallel.map(in_progress_page.search('#my-auctions-table > tbody > tr'), in_threads: @threads) do |row|
         Goodwill::BiddingAuction.new(itemid_from_open_order_row(row), mechanize)
       end
     end
@@ -36,8 +35,8 @@ module Goodwill
     def search(item_title)
       search_page = mechanize.get(SEARCH_URL + item_title)
       pages(total_items(search_page)).times.map do |i|
-        search_page = search_page.link_with(text: 'Next').click unless i == 0
-        Parallel.map(search_page.search('table.productresults tbody > tr'), in_threads: @threads) do |row|
+        search_page = search_page.link_with(text: '>').click unless i == 0
+        Parallel.map(search_page.search('#search-results > div > section > ul.products > li'), in_threads: @threads) do |row|
           Goodwill::Auction.new(itemid_from_search_row(row))
         end
       end.flatten
@@ -59,19 +58,19 @@ module Goodwill
     private
 
     def pages(items)
-      (items / 25.to_f).ceil
+      (items / 40.to_f).ceil
     end
 
     def total_items(page)
-      page.search('div h1').text.split.first.to_i
+      page.search('//*[@id="search-results"]/div/div[1]/nav[1]/p').first.text.split(" of ")[1].split(" ").first.to_i
     end
 
     def itemid_from_open_order_row(row)
-      row.search('a').attr('href').value.split('=')[1]
+      row.search('a').text
     end
 
     def itemid_from_search_row(row)
-      row.search('th:nth-child(1)').text
+      row.search('a').first.attributes["href"].value.split('/').last
     end
   end
 end
