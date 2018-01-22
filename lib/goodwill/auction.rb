@@ -46,11 +46,11 @@ module Goodwill
     def to_hash
       hash = {}
       instance_variables.each do |var|
-        if var == :@end
-          hash[var.to_s.delete('@')] = instance_variable_get(var).to_s
-        else
-          hash[var.to_s.delete('@')] = instance_variable_get(var)
-        end
+        hash[var.to_s.delete('@')] = if var == :@end
+                                       instance_variable_get(var).to_s
+                                     else
+                                       instance_variable_get(var)
+                                     end
       end
       hash
     end
@@ -60,7 +60,7 @@ module Goodwill
     def calculate_shipping(itemid, zipcode, state, country)
       params = "?ZipCode=#{zipcode}&State=#{state}&Country=#{country}&ItemId=#{itemid}&_=#{DateTime.now.strftime('%s')}"
       page = mechanize.get(SHIPPING_URL + params)
-      page.search(SHIPPING_PATH).text.split(": ").last.tr('$', '').to_f
+      page.search(SHIPPING_PATH).text.split(': ').last.tr('$', '').to_f
     end
   end
 end

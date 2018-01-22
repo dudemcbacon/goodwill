@@ -25,7 +25,7 @@ module Goodwill
         @bidding = true
         row = order_page.link_with(text: regqt(itemid.to_s)).node.parent.parent
         @winning = !row.search('td:nth-child(5) > i').empty?
-        @max = row.search('td:nth-child(5)').text.tr("\r\n","").tr(" ","").tr("$","")
+        @max = row.search('td:nth-child(5)').text.tr("\r\n", '').tr(' ', '').tr('$', '')
       else
         @bidding = false
         @winning = false

@@ -37,10 +37,10 @@ module Goodwill
         return true if logged_in?
         @mechanize.get(LOGIN_URL) do |page|
           my_page = page.form_with(action: '/SignIn') do |f|
-            f.Username     = @username
+            f.Username = @username
             f.Password = @password
           end.click_button
-          @logged_in = my_page.links.map(&:to_s).include? "My Shopgoodwill "
+          @logged_in = my_page.links.map(&:to_s).include? 'My Shopgoodwill '
         end
       end
     end

@@ -52,7 +52,7 @@ module Goodwill
         confirmation_form.buyerLogin = @username
         confirmation_form.buyerPasswd = @password
         butt = confirmation_form.submit
-        butt.search('tr')[1].text.split.last.tr('$', '') == bid ? true : false
+        butt.search('tr')[1].text.split.last.tr('$', '') == bid
       end
     end
 
@@ -63,7 +63,7 @@ module Goodwill
     end
 
     def total_items(page)
-      page.search('//*[@id="search-results"]/div/div[1]/nav[1]/p').first.text.split(" of ")[1].split(" ").first.to_i
+      page.search('//*[@id="search-results"]/div/div[1]/nav[1]/p').first.text.split(' of ')[1].split(' ').first.to_i
     end
 
     def itemid_from_open_order_row(row)
@@ -71,7 +71,7 @@ module Goodwill
     end
 
     def itemid_from_search_row(row)
-      row.search('a').first.attributes["href"].value.split('/').last
+      row.search('a').first.attributes['href'].value.split('/').last
     end
   end
 end
