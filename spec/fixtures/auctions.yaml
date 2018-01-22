@@ -1,45 +1,46 @@
 ---
 - !ruby/object:Goodwill::BiddingAuction
-  href: http://www.shopgoodwill.com/viewItem.asp?itemID=24710437
-  itemid: '24710437'
-  bids: '6'
-  current: "$36.00"
-  end: ''
-  item: Vintage Apple Newton MessagePad 110
-  seller: ''
+  href: https://www.shopgoodwill.com/viewItem.asp?itemID=48112189
+  itemid: '48112189'
+  bids: 2
+  current: 8.99
+  end: !ruby/object:DateTime 2018-01-24 18:41:00.000000000 -08:00
+  item: Gameboy Color Console w/ 2 Video Games Tamagotchi
+  seller: Goodwill Industries of the Chesapeake, Inc.
   bidding: true
-  winning: false
-  max: "$30.00"
+  winning: true
+  max: '8.99'
+  zipcode: '97222'
+  state: OR
+  country: United States
+  shipping: 9.3
 - !ruby/object:Goodwill::BiddingAuction
-  href: http://www.shopgoodwill.com/viewItem.asp?itemID=24765885
-  itemid: '24765885'
-  bids: '8'
-  current: "$67.55"
-  end: ''
-  item: Apple IIe Card, In Sealed Box
-  seller: ''
+  href: https://www.shopgoodwill.com/viewItem.asp?itemID=48120725
+  itemid: '48120725'
+  bids: 8
+  current: 78.77
+  end: !ruby/object:DateTime 2018-01-24 19:23:00.000000000 -08:00
+  item: Nintendo GameBoy Color Bundle !!
+  seller: Land of Lincoln Goodwill
   bidding: true
-  winning: false
-  max: "$10.00"
+  winning: true
+  max: '100.00'
+  zipcode: '97222'
+  state: OR
+  country: United States
+  shipping: 15.65
 - !ruby/object:Goodwill::BiddingAuction
-  href: http://www.shopgoodwill.com/viewItem.asp?itemID=24763462
-  itemid: '24763462'
-  bids: '15'
-  current: "$176.99"
-  end: ''
-  item: Apple IIc Plus Computer, In Original Box
-  seller: ''
+  href: https://www.shopgoodwill.com/viewItem.asp?itemID=48294656
+  itemid: '48294656'
+  bids: 1
+  current: 9.99
+  end: !ruby/object:DateTime 2018-01-29 20:04:00.000000000 -08:00
+  item: PURPLE GAMEBOY COLOR WITH MORTAL KOMBAT GAME
+  seller: Goodwill of Central & Southern Indiana
   bidding: true
-  winning: false
-  max: "$40.00"
-- !ruby/object:Goodwill::BiddingAuction
-  href: http://www.shopgoodwill.com/viewItem.asp?itemID=24766011
-  itemid: '24766011'
-  bids: '9'
-  current: "$36.99"
-  end: ''
-  item: Commodore Amiga A500 Computer
-  seller: ''
-  bidding: true
-  winning: false
-  max: "$11.00"
+  winning: true
+  max: '9.99'
+  zipcode: '97222'
+  state: OR
+  country: United States
+  shipping: 9.59

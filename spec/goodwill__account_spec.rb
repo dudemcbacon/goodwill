@@ -6,6 +6,15 @@ IN_PROG = 'https://www.shopgoodwill.com/buyers/myShop/AuctionsInProgress.asp'
 include Goodwill::URLPaths
 
 describe Goodwill::Account do
+  before do
+    stub_request(:get, "https://www.shopgoodwill.com/SignIn")
+      .to_return(File.new("spec/fixtures/SignIn.html_get"))
+
+    stub_request(:post, "https://www.shopgoodwill.com/SignIn")
+      .to_return(File.new("spec/fixtures/SignIn.html_post"))
+
+  end
+
   describe '#bid' do
     before do
       @account = Goodwill::Account.new('pants', 'pantspass')
@@ -16,49 +25,47 @@ describe Goodwill::Account do
 
   describe '#in_progress' do
     before do
-      mech = Mechanize.new
-      @account = Goodwill::Account.new('pants', 'pantspass')
-      in_prog_cont = mech.get('file:///' + File.expand_path('./spec/fixtures/in_progress.html'))
-      allow(@account.mechanize).to receive(:get).with(IN_PROG).and_return(in_prog_cont)
-      %w(24710437 24763462 24765885 24766011).each do |itemid|
-        content = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
-        shipping = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
-        params = "?itemid=#{itemid}&zip=97222&state=OR&country=United States"
-        allow(@account.mechanize).to receive(:get).with(ITEM_SEARCH_URL + itemid).and_return(content)
-        allow(@account.mechanize).to receive(:get).with(SHIPPING_URL + params).and_return(shipping)
+      stub_request(:get, "https://www.shopgoodwill.com/MyShopgoodwill/AuctionsInProgress")
+        .to_return(File.new("spec/fixtures/in_progress_page"))
+
+      %w[48294656 48120725 48112189].each do |itemid|
+        stub_request(:get, "https://www.shopgoodwill.com/viewItem.asp?itemID=#{itemid}")
+          .to_return(File.new("spec/fixtures/#{itemid}"))
+
+        stub_request(:get, /CalculateShipping\?Country=United%20States&ItemId=#{Regexp.quote(itemid)}&State=OR&ZipCode=97222/)
+          .to_return(File.new("spec/fixtures/#{itemid}_shipping"))
       end
     end
 
     it 'should be able to get a list of auctions in progress' do
       auctions = YAML.load(File.open('./spec/fixtures/auctions.yaml'))
 
+      @account = Goodwill::Account.new('foo', 'bar')
       result = @account.in_progress
-
       expect(result).to eq(auctions)
     end
   end
 
   describe '#search' do
     before do
-      mech = Mechanize.new
-      @account = Goodwill::Account.new('pants', 'pantspass')
-      search_cont = mech.get('file:///' + File.expand_path('./spec/fixtures/search_cont.html'))
-      allow(@account.mechanize).to receive(:get).with(SEARCH_URL + 'famicom').and_return(search_cont)
-      %w(25576979 25577232).each do |itemid|
-        content = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
-        shipping = mech.get('file:///' + File.expand_path("./spec/fixtures/#{itemid}.html"))
-        params = "?itemid=#{itemid}&zip=97222&state=OR&country=United States"
-        allow(@account.mechanize).to receive(:get).with(ITEM_SEARCH_URL + itemid).and_return(content)
-        allow(@account.mechanize).to receive(:get).with(SHIPPING_URL + params).and_return(shipping)
+      stub_request(:get, /Listings/)
+        .to_return(File.new("spec/fixtures/search_page"))
+
+      %w[48213986 48155521 48084603].each do |itemid|
+        stub_request(:get, "https://www.shopgoodwill.com/viewItem.asp?itemID=#{itemid}")
+          .to_return(File.new("spec/fixtures/#{itemid}"))
+
+        stub_request(:get, /CalculateShipping\?Country=United%20States&ItemId=#{Regexp.quote(itemid)}&State=OR&ZipCode=97222/)
+          .to_return(File.new("spec/fixtures/#{itemid}_shipping"))
       end
     end
 
     it 'should be able to search for auctions' do
-      famicom_auctions = YAML.load(File.open('./spec/fixtures/famicom_search_results.yaml'))
+      auctions = YAML.load(File.open('./spec/fixtures/google_search_results.yaml'))
 
-      result = @account.search('famicom')
-
-      expect(result).to eq(famicom_auctions)
+      @account = Goodwill::Account.new('foo', 'bar')
+      result = @account.search('google home')
+      expect(result).to eq(auctions)
     end
   end
 end

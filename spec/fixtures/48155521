@@ -1,0 +1,1596 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+X-AspNetMvc-Version: 5.2
+X-Frame-Options: SAMEORIGIN
+X-Frame-Options: SAMEORIGIN
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+Date: Fri, 19 Jan 2018 23:26:00 GMT
+Set-Cookie: BNI_persistence=00000000000000000000000023c6410a0000bb01; Path=/
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: __RequestVerificationToken=wBQ_XEIWLd415fG4ClvxLdbXW8KjJSyRmPFtgeAaw9bDJPVJ_2bVQHiMPawiJnmythqX-QPvvGuMrtW1DTQT9ry3p9Rz06VyjVRSPx6miZA1; path=/; secure; HttpOnly
+Transfer-Encoding: chunked
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Online Marketplace for Goodwill thrift stores">
+    
+    <meta name="keywords" content="Google,Home,Voice" />
+
+    <title>Google Home Voice Activated Speaker Unit - shopgoodwill.com</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://shopgoodwillcdn.azureedge.net/bundles/layoutheader?v=3.0.6596.23110"></script>
+
+
+    <link href="https://shopgoodwillcdn.azureedge.net/bundles/css?v=3.0.6596.23110" rel="stylesheet"/>
+
+
+    
+    <link href="https://shopgoodwillcdn.azureedge.net/bundles/itemcss?v=3.0.6596.23110" rel="stylesheet"/>
+
+
+
+    <link rel="canonical" href="http://www.shopgoodwill.com/">
+    
+    <script src="https://use.fontawesome.com/b9668a4273.js"></script>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('filter-sellers');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("seller-list");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("label")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <!-- Cookie Consent popup -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#2f3490"
+                    },
+                    "button": {
+                        "background": "#f1d600"
+                    }
+                },
+                "content": {
+                    "href": "About/PrivacyPolicy"
+                }
+            })
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google AdWords -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1040865065"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag()
+        { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-1040865065');
+    </script>
+    <!-- Event snippet for Sign Up conversion page -->
+    
+</head>
+<body>
+
+    <div id="login"></div>
+
+    <div id="modal-bid" class="modal fade"></div>
+
+    <div id="modal-feedback" class="modal fade modal-lg" tabindex="-1" role="dialog"></div>
+
+    <div id="contact-seller-modal" class="modal fade" tabindex="-1" role="dialog"></div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul class="account-menu">
+                        <li><a href="/MyShopgoodwill/PersonalInfo">Welcome Derp</a> </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">My Shopgoodwill <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/MyShopgoodwill/PersonalInfo">Personal Information</a></li>
+                                <li><a href="/MyShopgoodwill/OpenOrders">Open Orders</a></li>
+                                <li><a href="/MyShopgoodwill/ShippedOrders">Shipped Orders</a></li>
+                                <li><a href="/MyShopgoodwill/AuctionsInProgress">Auctions In Progress</a></li>
+                                <li><a href="/MyShopgoodwill/ClosedAuctions">Closed Auctions</a></li>
+                                <li><a href="/MyShopgoodwill/WatchList">Watch List</a></li>
+                                <li><a href="/MyShopgoodwill/PersonalShopper">Personal Shopper</a></li>
+                                <li><a href="/MyShopgoodwill/CustomerService">Customer Service</a></li>
+                                <li><a href="/MyShopgoodwill/SavedSearches">Saved Searches</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/SignOut">Sign Out</a>
+                        </li>
+                    <li>
+                        <a href="/HelpPage">Help</a>
+                    </li>
+                    <li>
+                        1/22/2018 2:45:53 PM PT
+                    </li>
+                </ul>
+                <a href="/">
+                    <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/logo-white.png" alt="" class="logo mobile-logo" >
+                    <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/logo.png" alt="" class="logo desktop-logo" >
+                </a>
+                <ul class="mobile-menu-links">
+                    <li>
+                        <button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </li>
+                </ul>
+                <div class="desktop-search search">
+                    <form id="search-form-header"><input type="hidden" name="nccharset" value="BF81AFEE">
+                        <div class="input-group input-group-lg">
+                            <input aria-describedby="searchBottomDeskTop" aria-label="Search Text" aria-required="True" class="form-control" id="search-text-header" name="SearchText" pattern=".{3,}" placeholder="Search Auctions..." required="True" title="(3 characters minimum)" type="text" value="" />
+                            <span class="input-group-btn" id="searchBottomDeskTop">
+                                <button type="submit" class="btn btn-default" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <a href="/AdvancedSearch" class="advanced-search">Advanced Search</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="mobile-search search">
+                    <form id="search-form-mobile"><input type="hidden" name="nccharset" value="BF81AFEE">
+                        <div class="input-group input-group-lg">
+                            <input aria-describedby="searchBottomMobile" aria-label="Search Text" class="form-control" id="search-text-mobile" name="SearchText" pattern=".{3,}" placeholder="Search Auctions..." required="True" title="(3 characters minimum)" type="text" value="" />
+                            <span class="input-group-btn" id="searchBottomMobile">
+                                <button class="btn btn-default" type="submit" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar yamm navbar-default" id="navbar">
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="mobile-only"><a href="/AdvancedSearch" class="advanced-search">Advanced Search</a></li>
+                            <!-- Classic list -->
+                            <li class="dropdown yamm-fw">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Categories<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <!-- Content container to add padding -->
+                                        <div class="yamm-content">
+                                            <div class="row">
+                                                <ul class="nav-columns list-unstyled">
+                                                        <li onclick="javascript: viewListings('', '', 399);"><a href="#">** Star Wars Collectibles **</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 352);"><a href="#">** Ugly / Festive Holiday Sweaters **</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 1);"><a href="#">Antiques</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 15);"><a href="#">Art</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 336);"><a href="#">Bath &amp; Body</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 2);"><a href="#">Books/Movies/Music</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 2208);"><a href="#">Bulk</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 170);"><a href="#">Cameras &amp; Camcorders</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 10);"><a href="#">Clothing</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 4);"><a href="#">Collectibles</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 7);"><a href="#">Computers &amp; Electronics</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 8);"><a href="#">Crafts &amp; Hobbies</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 195);"><a href="#">For The Home</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 14);"><a href="#">Glass</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 6);"><a href="#">Jewelry &amp; Gemstones</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 113);"><a href="#">Miscellaneous</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 13);"><a href="#">Musical Instruments</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 215);"><a href="#">Office Supplies</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 34);"><a href="#">Pet Supplies</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 115);"><a href="#">Religious Items</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 364);"><a href="#">Science &amp; Education</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 18);"><a href="#">Seasonal &amp; Holiday</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 12);"><a href="#">Sports</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 20);"><a href="#">Tableware and Kitchenware</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 114);"><a href="#">Tools</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 9);"><a href="#">Toys/Dolls/Games</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 23);"><a href="#">Transportation</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 427);"><a href="#">Travel/Luggage</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 468);"><a href="#">Wedding</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="group-search" group="Gallery">Gallery Auctions</a></li>
+                            <li><a class="group-search" group="New">New Today</a></li>
+                            <li><a class="group-search" group="Ending">Ending Today</a></li>
+                            <li><a class="group-search" group="Going">Going Going Gone</a></li>
+                            <li><a class="group-search" group="BuyItNow">Buy It Now</a></li>
+                            <li><a class="group-search" group="Hot50">Hot 50</a></li>
+                            <li><a class="group-search" group="LastChance">Last Chance</a></li>
+                            <li><a class="group-search" group="OneCent">1¢ Shipping</a></li>
+                            <li class="dropdown mobile-only">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">My Shopgoodwill<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/MyShopgoodwill/PersonalInfo">Personal Information</a></li>
+                                    <li><a href="/MyShopgoodwill/OpenOrders">Open Orders</a></li>
+                                    <li><a href="/MyShopgoodwill/ShippedOrders">Shipped Orders</a></li>
+                                    <li><a href="/MyShopgoodwill/AuctionsInProgress">Auctions In Progress</a></li>
+                                    <li><a href="/MyShopgoodwill/ClosedAuctions">Closed Auctions</a></li>
+                                    <li><a href="/MyShopgoodwill/WatchList">Watch List</a></li>
+                                    <li><a href="/MyShopgoodwill/PersonalShopper">Personal Shopper</a></li>
+                                    <li><a href="/MyShopgoodwill/CustomerService">Customer Service</a></li>
+                                    <li><a href="/MyShopgoodwill/SavedSearches">Saved Searches</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-only"><hr></li>
+                                <li class="mobile-only"><a href="/SignOut">Sign Out</a></li>
+                            <li class="mobile-only"><a href="">Contact</a></li>
+                            <li class="mobile-only"><a href="/HelpPage">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+﻿
+
+
+<section class="product-page padding">
+
+    <div class="modal fade" id="buynow-modal" style="padding:10px">
+        <div class="modal-dialog" id="sb-modal-box">
+            <div class="modal-content" style="padding:10px">
+                <div class="text-center" id="sb-modal-top">
+                    <p class="product-title"><b>Buy Now</b></p>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <b>Please confirm if you wish to buy the following item now.</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">Item</div>
+                        <div class="col-md-10">#48155521 - Google Home Voice Activated Speaker Unit</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">Price</div>
+                        <div class="col-md-10">$0.00</div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a id="submit-buynow" class="btn btn-theme-secondary" data-itemid="48155521" data-price="0">Buy Now</a>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align:right;">
+                            <a id="sb-cancel" data-dismiss="modal" class="btn btn-theme-primary">Do Not Buy</a>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12"><b>If you buy the item now, you agree to purchase the item.</b></div>
+                        <div class="col-lg-12">Failure to complete the purchase after agreeing to buy now may result in termination of your bidding privileges.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="product-email-modal" tabindex="-1" role="dialog"></div>
+
+    <div class="container">
+            <div class="row" style="padding-bottom:20px">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- New Site Item Top -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-7791222870675497"
+                     data-ad-slot="8658800763"
+                     data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        <div class="row">
+            <div class="breadcrumbDiv col-lg-12">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+<li>                            <a class="category-search" category="7">Computers &amp; Electronics</a>
+</li>                    <li class="active">Google Home Voice Activated Speaker Unit</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div id="productCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                                    <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#productCarousel" data-slide-to="1"></li>
+                                    <li data-target="#productCarousel" data-slide-to="2"></li>
+                                    <li data-target="#productCarousel" data-slide-to="3"></li>
+                                    <li data-target="#productCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" data-chocolat-title="Product Images">
+                                    <div class="active item" data-slide-number="0">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/79375841882823nd.jpg" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/79375841882823nd.jpg"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="1">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/56991201882825nd.jpg" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/56991201882825nd.jpg"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="2">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/97311021882826nd.jpg" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/97311021882826nd.jpg"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="3">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/11437621882828nd.jpg" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/11437621882828nd.jpg"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="4">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/88930461882828nd.jpg" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/88930461882828nd.jpg"></a>
+                                    </div>
+                            <div class="magnify">
+                                <div class="fa fa-search-plus"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="product-thumbnails owl-carousel owl-theme">
+                                <div>
+                                    <a id="carousel-thumb-0" class="carousel-thumb selected">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/79375841882823nd-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-1" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/56991201882825nd-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-2" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/97311021882826nd-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-3" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/11437621882828nd-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-4" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/88930461882828nd-thumb.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                </div>
+            <div class='col-xs-12 col-sm-6'>            <h1 class="product-title">Google Home Voice Activated Speaker Unit</h1>
+            <hr>
+
+
+            <!-- Buttons for Mobile Devices -->
+            
+﻿
+<div class="purchase-mobile">
+            <!--  Buy It Now -->
+            <!-- Place A Bid -->
+                <button class="btn btn-theme-primary quick-bid" data-toggle="modal" data-target="#modal-bid" data-url="/Bid/PlaceBid" data-itemid="48155521">Place Bid</button>
+            <div class="row">
+                <div class="col-lg-12">
+                    <strong><span class="validation-summary-errors" id="bid-error"></span></strong>
+                </div>
+            </div>
+    <button class="btn btn-default watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48155521"><i class="fa fa-eye" aria-hidden="true"></i> Watch</button>
+    <button class="btn btn-default show-contact-seller"><i class="fa fa-comments" aria-hidden="true"></i> Contact Seller</button>
+</div>
+
+
+
+            <!-- Purchase Inputs for Desktop Devices -->
+            
+﻿
+<div class="purchase-desktop">
+            <!--  Buy It Now -->
+            <!-- Place A Bid -->
+                <div class="purchase">
+                    <label for="">
+                        Current Price: <span class="current-price">
+                            $23.00
+                        </span>
+                        <span class="reserve-met">
+                        </span>
+                    </label>
+                </div>
+                <div class="purchase">
+                    <label for="">Minimum Bid: <span class="minimum-bid">$24.00</span></label>
+                </div>
+                            <div class="purchase bid">
+                                <label for="">Enter your <a href="/HelpPage/FaqDetail/Automatic-Proxy-Bidding">maximum</a> bid: </label>
+                                <div class="action">
+                                    <div class="form-inline place-bid">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">$</span>
+                                                <input type="number" class="form-control" id="bidAmount" aria-label="Bid Amount">
+                                            </div>
+                                            <button id="placeBid" type="button" class="btn btn-theme-primary" data-toggle="modal" data-target="#modal-bid" data-url="/Bid/PlaceBid" data-itemid="48155521">Place Bid</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <strong><span class="validation-summary-errors" id="bid-error"></span></strong>
+                </div>
+            </div>
+
+
+    <!-- Add To Watch List -->
+    <div class="add-to-watch-list">
+        <a class="watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48155521" style="cursor:pointer;"><i class="fa fa-eye" aria-hidden="true"></i> Watch This Item</a>
+    </div>
+
+    <!-- Contact Seller -->
+    <div class="contact-seller">
+        <a class="show-contact-seller" href=""><i class="fa fa-comments" aria-hidden="true"></i> Contact Seller</a>
+    </div>
+
+    <!-- Contact Seller -->
+    <div class="print-page">
+        <a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print This Page</a>
+    </div>
+</div>
+
+
+
+            <p>Share This Product</p>
+            <ul class="social-share">
+                <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.shopgoodwill.com/Item/48155521" target="_blank" title="Share on Facebook"> <i class="fa fa-facebook"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Google Home Voice Activated Speaker Unit&url=https://www.shopgoodwill.com/Item/48155521" target="_blank" title="Share on Twitter"> <i class="fa fa-twitter"></i></a></li>
+                <li class="google"><a href="https://plus.google.com/share?url=https://www.shopgoodwill.com/Item/48155521" target="_blank"> <i class="fa fa-google-plus" title="Share on Google+"></i></a></li>
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/bookmarklet/?media=image&url=https://www.shopgoodwill.com/Item/48155521&is_video=false&description=Google Home Voice Activated Speaker Unit" target="_blank" title="Share on Pinterest"> <i class="fa fa-pinterest"></i></a></li>
+                <li class="email"><a href="" id="show-product-email" data-toggle="modal" data-target="#product-email-modal" data-url="/Item/SendToFriend" data-itemid="48155521"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <!-- Product Data -->
+            <ul class="product-data">
+                <li align="center"><b>Reload this page for updates</b></li>
+                <li><b>Product ID: </b>48155521 <input id="pid" type="hidden" value="48155521" /></li>
+                    <li>
+                        <b>Number of Bids:</b><span class="num-bids">12</span>
+                        <span id="high-bidder">
+ (High Bidder: b***************s)                        </span>
+                    </li>
+                    <li><b>Current Price:</b><span class="current-price">$23.00</span></li>
+                                                    <li><b>Bid Increment:</b>$1.00</li>
+                                            <li><b>Shipping Price:</b><a id="goto-shipping" href="#shipping-tab">Estimate Shipping</a></li>
+                <li><b>Handling Price:</b>$1.99</li>
+                <li><b>Seller: </b><a href="/jacksonville">Goodwill of North Florida</a></li>
+                    <li><b>Ends In: </b><span id="product-countdown"></span></li>
+                    <li><b>Ends On: </b>1/23/2018 7:11:00 PM Pacific Time</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="margin-top-3rem"></div>
+            <!-- Nav tabs -->
+            <div class="product-tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#itemInfo" aria-controls="itemInfo" role="tab" data-toggle="tab">Item Info</a></li>
+                    <li role="presentation"><a href="#payment" aria-controls="payment" role="tab" data-toggle="tab">Payment</a></li>
+                    <li id="shipping-tab" role="presentation"><a id="show-shipping" href="#shipping-desktop" aria-controls="shipping" role="tab" data-toggle="tab">Shipping</a></li>
+                    <li role="presentation"><a href="#sellerInfo" aria-controls="sellerInfo" role="tab" data-toggle="tab">Seller Info</a></li>
+                        <li role="presentation"><a href="#bidHistory" aria-controls="bidHistory" role="tab" data-toggle="tab">Bid History</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="itemInfo"><p>
+<p>Brand:Google</p>
+<p><strong>Model #: HOME 6A19AYJB29</strong></p>
+<p><strong>Manufacturer's Date:</strong></p>
+<p>Accessories: Power Cord</p>
+<p>Powers on(Y/N): YES. SOLD AS IS</p>
+<p>Measurements:</p>
+<p>Length: 5"</p>
+<p>Width: 3"</p>
+<p><strong>CONDITION: OUT OF BOX. UNIT with Plug ONLY. Full Functionality Unknown.</strong></p>
+<p>
+<p><strong>**FUNCTIONALITY DISCLAIMER**</strong></p>
+<p><strong>Note:</strong> Any testing of electronics for power and/or functionality will be mentioned within the listing above <strong>ONLY</strong> if applicable.&nbsp; In some instances we may not have the necessary equipment to test certain electronics therefore we can not verify nor guarantee full or ongoing functionality. These will be auctioned off as <strong>SOLD-AS-IS</strong> with <strong>NO</strong> refunds.&nbsp; Please keep this in mind when bidding.</p>
+<p><strong>***Condition Disclaimer***</strong></p>
+<p><strong>This lot is pre-owned and may contain unseen flaws and imperfections in addition to the information listed here. </strong>This is a USED item donated to Goodwill of North Florida.<br>Please see images for further detail and ask any questions you may have before making a bid. <br><br></p>
+<p><u><i><b>This item is NOT available for combined shipping and will be shipped via UPS GROUND.&nbsp; We currently do not ship with other carriers.&nbsp; Please utilize the shipping calculator prior to placing your bid.&nbsp; Bid retractions and cancellations will not be granted for shipping prices.</b></i><br></u><br><br>Local pick up hours are Monday - Saturday between the hours of 9:00am - 4:00pm EST and closed on Sunday.&nbsp; Our office is located at 4655 Lenox Avenue, Jacksonville, Fl., 32205.&nbsp; Please give us 24 hours advance notice prior to your pick up time.&nbsp; If items are not picked up within 10 days of the day of payment, they will be re-donated and no refund will be given.&nbsp; No exceptions.</p>
+<p>
+<p><br><!--(Store: St. Johns Bluff)--><br>
+</div>
+                    <div role="tabpanel" class="tab-pane" id="payment">
+<p><b>Payments MUST BE RECEIVED WITHIN seven (7) DAYS from auction close.</b></p>
+<p>
+    <b>Available Payment Methods:</b>
+    <br />
+    <div class="row">
+            <div class="col-sm-6">
+                <img src="/assets/images/payment/master_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/visa_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/discover_network_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp;  <img src="/assets/images/payment/american_express_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; 
+            </div>
+            </div>
+</p>
+</div>
+                    <div role="tabpanel" class="tab-pane" id="shipping-desktop">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>
+                <b><span style="font-weight:bold;">This item cannot be shipped internationally.</span></b>
+            </p>
+        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                        <b>This item ships via UPS</b>
+                                            </p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <p>
+                        <span>Shipping Weight: 2 lbs.</span><br />
+                            <span>Actual Weight: 1.3 lbs.</span><br />
+                        <span>Handling Price: $1.99</span>
+                    </p>
+
+                    <p><b>Shipping Calculator</b></p>
+
+                        <p>Select one of the following addresses:</p>
+                        <select class="form-control" id="shiping-address" name="shiping-address" data-url="/CalculateShipping" data-itemid="48155521">
+                            <option value="OR|97222|US">11353 SE Wood Ave, OR 97222  United States</option>
+
+                        </select>
+                        <p>Or enter the following shipping information:</p>
+                    <form id="shipping-form" data-url="/CalculateShipping" data-itemid="48155521"><input type="hidden" name="nccharset" value="BF81AFEE">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <label for="ZipCode">Zip/Postal Code</label>
+                                <input required type="text" class="form-control" id="zip-code" name="zip-code" placeholder="Zip/Postal Code" value="97222">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <label for="State">State</label>
+                                <select class="form-control" id="state" name="state" state="OR">
+                                    <option value="OR">OR</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <label for="Country">Country</label>
+                                <select required aria-required="true" class="form-control" id="country" name="country" country="US">
+                                    <option value="US">United States</option>
+                                    <option value="US">United States</option>
+                                            <option value="PR">Puerto Rico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="position:relative">
+                            <div class="loading-background">
+                                <div class="shipping-estimate-spinner"></div>
+                            </div>
+                            <br /><input id="get-shipping" type="submit" class="btn btn-theme-primary" value="Get Estimate" />
+                        </div>
+                    </form>
+                </div>
+                <div id="shipping-div" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    
+                </div>
+    </div>
+</div>
+                    <div role="tabpanel" class="tab-pane" id="sellerInfo">
+<h4><b>Seller:</b></h4>
+<p>Goodwill of North Florida</p>
+<h4><b>Location:</b></h4>
+<p>Jacksonville, FL</p>
+<h4><b>Seller Contact Information:</b></h4>
+<p>Goodwill of North Florida<br />4655 Lenox Avenue<br />Jacksonville, FL 32205<br /><a class="show-contact-seller" href=""><i class="fa fa-comments" aria-hidden="true"></i> Contact Us</a></p>
+<p>Items are shipped using a major carrier usually within 5 business days after receipt of payment. Shipping charges are calculated at payment time.</p>
+<br />
+<p><p><b>Thank you for assisting us to assist others! Your business is very appreciated.</b></p>
+<p><b>Our Commitment:</b> At Goodwill of North Florida we want you to be completely satisfied with your purchase. We do our best to accurately describe and photograph our listings. All weights and measurements are approximate and to the best of our knowledge. Before placing your bid, we strongly suggest that you read our Bidder Agreement. All Items are sold "AS IS...AS FOUND" Please note: Although we try our best to list as much information as we can about the items we sell, buyer be aware that all items are in pre-owned condition and also contain many unseen flaws/imperfections in addition to the information listed here. Please keep this in mind when shopping with us and ask all questions prior to placing a bid.</p>
+<p><b>Payment:</b> The only methods of payment we accept are Visa and MasterCard. We do not accept cash, checks, or any other form of payment. Sales tax of 7% will be added to purchases shipped to Florida residents and items picked up at our facility.</p>
+<p><b>IMPORTANT!! Items selected for local pick up will need to be picked up within TEN days of payment. If items are not picked up and we have not been otherwise notified by email, they will become a donation and recycled. NO refunds will be given.</b></p>
+<p><b>Combined Orders: </b>Multiple items can be combined during the checkout process provided that the payment deadline has not expired on any of the items that you are combining to create the order. Once an item has been paid for it is no longer eligible for combined shipping. We reserve the right to deny combination of certain items.</p>
+<p><b>Shipping: </b>Upon receipt of payment, we utilize UPS as our primary shipping carrier. Only books and media will be shipped USPS Media Mail. We do our best to have items shipped within 5 business days from the date of payment. We are limited to the carriers rules and regulations when shipping an order. Shipping charges are calculated at time of payment. Please check shipping rates prior to placing your bid. All items will be shipped as listed and will not be dismantled for any reason.</p>
+<p>Minimum shipment weight is 1 lb. Items weighing less than 1 lb. will be calculated at the 1 lb. rate. <b>Please check shipping rates prior to placing your bid.</b></p>
+<p><b>Insurance: </b>Buyer must email a request for insurance prior to making payment. Insurance cannot be added by the buyer during the payment process. An e-mail must be sent to us and we will then edit the order total for you.</p>
+<p><b>We apologize but if your package is damaged or lost we will not be able to issue a refund unless your package was insured. We strongly recommend insurance on all breakable items. Photos will be required before a refund will be considered. </b></p>
+<p><b>Handling Fee:</b> A minimum of $1.99 up to $9.99 handling fee will appear at checkout and applies to all purchases regardless of delivery method or pick up. Our handling fee is a set fee and cannot be adjusted. (Certain items that are very fragile, irregularly shaped, and/or heavy may be subject to an increased handling fee of $5.99 up to $9.99.) These fees, along with your purchase, help to support our mission.</p>
+<p><b>Pick Up Orders: </b>Pick up hours are Monday through Saturday between the hours of 9:00am - 4:00pm EST. Closed on Sunday. Our office is located at 4655 Lenox Avenue, Jacksonville, FL 32205.<strong> Pick up orders must be scheduled 24 hours in advance. You must receive a confirmation pick up number to ensure that your pick up is scheduled.</strong></p>
+<p><b>Returns: </b>Returns will be accepted only with prior authorization and under the terms stated in the Return Policy. Upon receipt of your item, we will refund the final bid amount.</p>
+<p><b>Customer Service: </b>Should you require our assistance, please email us at ecommerce@goodwilljax.org or we can be reached at 904-612-6967, Monday through Saturday, 9:00 a.m. to 4:00 p.m. EST. Please allow up to 48 hours for us to return your email or phone message. We will get back to you.</p>
+<p><b>*NOT GETTING OUR EMAILS? PLEASE CHECK YOUR SPAM FILTERS*</b> View Our Other Items For Sale</p>
+<p>Please Visit Our Website www.goodwilljax.org to learn more about Goodwill of North Florida.</p></p>
+<h4><b>Return Policy:</b></h4>
+<p>
+    Return Policy: Merchandise is sold As Is. Returns will only be accepted with prior authorization and under the terms stated in this Return Policy. If you have questions regarding the quality or authenticity of this item please contact Goodwill of North Florida prior to placing your bid. Items may be returned within seven (7) days of receipt if the merchandise was damaged during shipping or if there was a major distortion in the description. Returns will not be accepted without prior authorization. PLEASE NOTE THAT WE DO NOT REFUND SHIPPING AND HANDLING CHARGES. Items selected for pick up from the seller, must be picked up within ten (10) days from date of payment. Items not picked up from seller within ten (10) days from date of payment will be resold with no further notice.
+</p>
+<p><b><u><a href="/Listings/Seller/47">View other items for sale by this seller</a></u></b></p>
+</div>
+                        <div role="tabpanel" class="tab-pane" id="bidHistory">﻿
+<div id="bid-history">
+        <table>
+            <tr>
+                <td>
+                    <a class="show-complete-bids" style="display:inline; cursor:pointer;">Show Complete Bid History</a>
+                    <a class="show-summary-bids" style="display:none; cursor:pointer;">Show Bid History Summary</a>
+                </td>
+            </tr>
+        </table>
+        <table class="bid-summary" style="display:inline">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">Time of last bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/20/2018 3:22:56 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:51 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">s*******e</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/20/2018 7:31:55 AM</td>
+                </tr>
+                    </table>
+        <table class="bid-complete" style="display:none">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">High Bidder</td>
+                <td style="padding:5px">Item Price</td>
+                <td style="padding:5px">Time of bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                    <td style="padding-right:5px; padding-left:5px">$23.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 3:22:56 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">s*******e</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$21.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 7:31:55 AM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:51 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:34 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:19 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:06 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:51 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:32 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:15 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:02 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                    <td style="padding-right:5px; padding-left:5px">$9.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:00:46 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                    <td style="padding-right:5px; padding-left:5px">$7.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 6:36:51 PM</td>
+                </tr>
+                    </table>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="product-accordion">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Item Info
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>
+<p>Brand:Google</p>
+<p><strong>Model #: HOME 6A19AYJB29</strong></p>
+<p><strong>Manufacturer's Date:</strong></p>
+<p>Accessories: Power Cord</p>
+<p>Powers on(Y/N): YES. SOLD AS IS</p>
+<p>Measurements:</p>
+<p>Length: 5"</p>
+<p>Width: 3"</p>
+<p><strong>CONDITION: OUT OF BOX. UNIT with Plug ONLY. Full Functionality Unknown.</strong></p>
+<p>
+<p><strong>**FUNCTIONALITY DISCLAIMER**</strong></p>
+<p><strong>Note:</strong> Any testing of electronics for power and/or functionality will be mentioned within the listing above <strong>ONLY</strong> if applicable.&nbsp; In some instances we may not have the necessary equipment to test certain electronics therefore we can not verify nor guarantee full or ongoing functionality. These will be auctioned off as <strong>SOLD-AS-IS</strong> with <strong>NO</strong> refunds.&nbsp; Please keep this in mind when bidding.</p>
+<p><strong>***Condition Disclaimer***</strong></p>
+<p><strong>This lot is pre-owned and may contain unseen flaws and imperfections in addition to the information listed here. </strong>This is a USED item donated to Goodwill of North Florida.<br>Please see images for further detail and ask any questions you may have before making a bid. <br><br></p>
+<p><u><i><b>This item is NOT available for combined shipping and will be shipped via UPS GROUND.&nbsp; We currently do not ship with other carriers.&nbsp; Please utilize the shipping calculator prior to placing your bid.&nbsp; Bid retractions and cancellations will not be granted for shipping prices.</b></i><br></u><br><br>Local pick up hours are Monday - Saturday between the hours of 9:00am - 4:00pm EST and closed on Sunday.&nbsp; Our office is located at 4655 Lenox Avenue, Jacksonville, Fl., 32205.&nbsp; Please give us 24 hours advance notice prior to your pick up time.&nbsp; If items are not picked up within 10 days of the day of payment, they will be re-donated and no refund will be given.&nbsp; No exceptions.</p>
+<p>
+<p><br><!--(Store: St. Johns Bluff)--><br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Payment
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                
+<p><b>Payments MUST BE RECEIVED WITHIN seven (7) DAYS from auction close.</b></p>
+<p>
+    <b>Available Payment Methods:</b>
+    <br />
+    <div class="row">
+            <div class="col-sm-6">
+                <img src="/assets/images/payment/master_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/visa_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/discover_network_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp;  <img src="/assets/images/payment/american_express_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; 
+            </div>
+            </div>
+</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shipping-tab-mobile" class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a id="show-shipping-mobile" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Shipping
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div id="shipping-mobile" class="panel-body">
+                                
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>
+                <b><span style="font-weight:bold;">This item cannot be shipped internationally.</span></b>
+            </p>
+        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                        <b>This item ships via UPS</b>
+                                            </p>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <p>
+                        <span>Shipping Weight: 2 lbs.</span><br />
+                            <span>Actual Weight: 1.3 lbs.</span><br />
+                        <span>Handling Price: $1.99</span>
+                    </p>
+
+                    <p><b>Shipping Calculator</b></p>
+
+                        <p>Select one of the following addresses:</p>
+                        <select class="form-control" id="shiping-address" name="shiping-address" data-url="/CalculateShipping" data-itemid="48155521">
+                            <option value="OR|97222|US">11353 SE Wood Ave, OR 97222  United States</option>
+
+                        </select>
+                        <p>Or enter the following shipping information:</p>
+                    <form id="shipping-form" data-url="/CalculateShipping" data-itemid="48155521"><input type="hidden" name="nccharset" value="BF81AFEE">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <label for="ZipCode">Zip/Postal Code</label>
+                                <input required type="text" class="form-control" id="zip-code" name="zip-code" placeholder="Zip/Postal Code" value="97222">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <label for="State">State</label>
+                                <select class="form-control" id="state" name="state" state="OR">
+                                    <option value="OR">OR</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <label for="Country">Country</label>
+                                <select required aria-required="true" class="form-control" id="country" name="country" country="US">
+                                    <option value="US">United States</option>
+                                    <option value="US">United States</option>
+                                            <option value="PR">Puerto Rico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="position:relative">
+                            <div class="loading-background">
+                                <div class="shipping-estimate-spinner"></div>
+                            </div>
+                            <br /><input id="get-shipping" type="submit" class="btn btn-theme-primary" value="Get Estimate" />
+                        </div>
+                    </form>
+                </div>
+                <div id="shipping-div" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    
+                </div>
+    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Seller Info
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                
+<h4><b>Seller:</b></h4>
+<p>Goodwill of North Florida</p>
+<h4><b>Location:</b></h4>
+<p>Jacksonville, FL</p>
+<h4><b>Seller Contact Information:</b></h4>
+<p>Goodwill of North Florida<br />4655 Lenox Avenue<br />Jacksonville, FL 32205<br /><a class="show-contact-seller" href=""><i class="fa fa-comments" aria-hidden="true"></i> Contact Us</a></p>
+<p>Items are shipped using a major carrier usually within 5 business days after receipt of payment. Shipping charges are calculated at payment time.</p>
+<br />
+<p><p><b>Thank you for assisting us to assist others! Your business is very appreciated.</b></p>
+<p><b>Our Commitment:</b> At Goodwill of North Florida we want you to be completely satisfied with your purchase. We do our best to accurately describe and photograph our listings. All weights and measurements are approximate and to the best of our knowledge. Before placing your bid, we strongly suggest that you read our Bidder Agreement. All Items are sold "AS IS...AS FOUND" Please note: Although we try our best to list as much information as we can about the items we sell, buyer be aware that all items are in pre-owned condition and also contain many unseen flaws/imperfections in addition to the information listed here. Please keep this in mind when shopping with us and ask all questions prior to placing a bid.</p>
+<p><b>Payment:</b> The only methods of payment we accept are Visa and MasterCard. We do not accept cash, checks, or any other form of payment. Sales tax of 7% will be added to purchases shipped to Florida residents and items picked up at our facility.</p>
+<p><b>IMPORTANT!! Items selected for local pick up will need to be picked up within TEN days of payment. If items are not picked up and we have not been otherwise notified by email, they will become a donation and recycled. NO refunds will be given.</b></p>
+<p><b>Combined Orders: </b>Multiple items can be combined during the checkout process provided that the payment deadline has not expired on any of the items that you are combining to create the order. Once an item has been paid for it is no longer eligible for combined shipping. We reserve the right to deny combination of certain items.</p>
+<p><b>Shipping: </b>Upon receipt of payment, we utilize UPS as our primary shipping carrier. Only books and media will be shipped USPS Media Mail. We do our best to have items shipped within 5 business days from the date of payment. We are limited to the carriers rules and regulations when shipping an order. Shipping charges are calculated at time of payment. Please check shipping rates prior to placing your bid. All items will be shipped as listed and will not be dismantled for any reason.</p>
+<p>Minimum shipment weight is 1 lb. Items weighing less than 1 lb. will be calculated at the 1 lb. rate. <b>Please check shipping rates prior to placing your bid.</b></p>
+<p><b>Insurance: </b>Buyer must email a request for insurance prior to making payment. Insurance cannot be added by the buyer during the payment process. An e-mail must be sent to us and we will then edit the order total for you.</p>
+<p><b>We apologize but if your package is damaged or lost we will not be able to issue a refund unless your package was insured. We strongly recommend insurance on all breakable items. Photos will be required before a refund will be considered. </b></p>
+<p><b>Handling Fee:</b> A minimum of $1.99 up to $9.99 handling fee will appear at checkout and applies to all purchases regardless of delivery method or pick up. Our handling fee is a set fee and cannot be adjusted. (Certain items that are very fragile, irregularly shaped, and/or heavy may be subject to an increased handling fee of $5.99 up to $9.99.) These fees, along with your purchase, help to support our mission.</p>
+<p><b>Pick Up Orders: </b>Pick up hours are Monday through Saturday between the hours of 9:00am - 4:00pm EST. Closed on Sunday. Our office is located at 4655 Lenox Avenue, Jacksonville, FL 32205.<strong> Pick up orders must be scheduled 24 hours in advance. You must receive a confirmation pick up number to ensure that your pick up is scheduled.</strong></p>
+<p><b>Returns: </b>Returns will be accepted only with prior authorization and under the terms stated in the Return Policy. Upon receipt of your item, we will refund the final bid amount.</p>
+<p><b>Customer Service: </b>Should you require our assistance, please email us at ecommerce@goodwilljax.org or we can be reached at 904-612-6967, Monday through Saturday, 9:00 a.m. to 4:00 p.m. EST. Please allow up to 48 hours for us to return your email or phone message. We will get back to you.</p>
+<p><b>*NOT GETTING OUR EMAILS? PLEASE CHECK YOUR SPAM FILTERS*</b> View Our Other Items For Sale</p>
+<p>Please Visit Our Website www.goodwilljax.org to learn more about Goodwill of North Florida.</p></p>
+<h4><b>Return Policy:</b></h4>
+<p>
+    Return Policy: Merchandise is sold As Is. Returns will only be accepted with prior authorization and under the terms stated in this Return Policy. If you have questions regarding the quality or authenticity of this item please contact Goodwill of North Florida prior to placing your bid. Items may be returned within seven (7) days of receipt if the merchandise was damaged during shipping or if there was a major distortion in the description. Returns will not be accepted without prior authorization. PLEASE NOTE THAT WE DO NOT REFUND SHIPPING AND HANDLING CHARGES. Items selected for pick up from the seller, must be picked up within ten (10) days from date of payment. Items not picked up from seller within ten (10) days from date of payment will be resold with no further notice.
+</p>
+<p><b><u><a href="/Listings/Seller/47">View other items for sale by this seller</a></u></b></p>
+
+                            </div>
+                        </div>
+                    </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Bid History
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    ﻿
+<div id="bid-history">
+        <table>
+            <tr>
+                <td>
+                    <a class="show-complete-bids" style="display:inline; cursor:pointer;">Show Complete Bid History</a>
+                    <a class="show-summary-bids" style="display:none; cursor:pointer;">Show Bid History Summary</a>
+                </td>
+            </tr>
+        </table>
+        <table class="bid-summary" style="display:inline">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">Time of last bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/20/2018 3:22:56 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:51 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">s*******e</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/20/2018 7:31:55 AM</td>
+                </tr>
+                    </table>
+        <table class="bid-complete" style="display:none">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">High Bidder</td>
+                <td style="padding:5px">Item Price</td>
+                <td style="padding:5px">Time of bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                    <td style="padding-right:5px; padding-left:5px">$23.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 3:22:56 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">s*******e</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$21.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 7:31:55 AM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:51 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:34 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:19 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:02:06 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:51 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:32 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:15 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:01:02 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">r*******0</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                    <td style="padding-right:5px; padding-left:5px">$9.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 12:00:46 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">b***************s</td>
+                    <td style="padding-right:5px; padding-left:5px">$7.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 6:36:51 PM</td>
+                </tr>
+                    </table>
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <section class="product-grid grid-view">
+                <div class="container">
+                        <div class="row" style="padding-bottom:20px">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- New Site Item Top -->
+                            <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-7791222870675497"
+                                 data-ad-slot="8658800763"
+                                 data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    <h2 class="heading">You May Also Like <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+                    <div class="line-icon"></div>
+
+                    <ul class="products">
+
+<li class="widget">
+    <a class="product" href="/Item/48037886">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/63/1-15-2018/584026415123531tt-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/63/1-15-2018/584026415123531tt-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48037886</div>
+                <div class="title">
+                    Netgear Prosafe 16 Port Smart Switch
+                    <br>Bids: 4
+                </div>
+                <div class="excerpt">DESCRIPTION:&#160;16 port Smart Switch &#160;&#160;&#160;&#160;&#160;&#160;
+Brand:&#160;Netgear &#160;
+Model: GS716T&#160;
+Function Tested: Powers...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$15.99</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/22/2018 6:27:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/22/2018 6:27:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48037886">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48037886">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48037886">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>
+<li class="widget">
+    <a class="product" href="/Item/48062481">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/81/1-16-2018/8750878165401al-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/81/1-16-2018/8750878165401al-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48062481</div>
+                <div class="title">
+                    Netgear Nighthawk Ac1900 Smart Wifi Router
+                    <br>Bids: 10
+                </div>
+                <div class="excerpt">Description: 						
+	Netgear Nighthawk Ac1900 Smart Wifi Router					
+						
+						
+Brand:...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$46.00</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/23/2018 7:15:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/23/2018 7:15:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48062481">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48062481">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48062481">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>
+<li class="widget">
+    <a class="product" href="/Item/48064723">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/63/1-16-2018/4163934166392ey-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/63/1-16-2018/4163934166392ey-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48064723</div>
+                <div class="title">
+                    Samsung Wireless Home Theater Receiver
+                    <br>Bids: 1
+                </div>
+                <div class="excerpt">DESCRIPTION: Samsung Wireless Home Theater Receiver&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+Brand: Samsung&#160;&#160;
+Model:...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$9.99</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/23/2018 6:27:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/23/2018 6:27:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48064723">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48064723">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48064723">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>
+<li class="widget">
+    <a class="product" href="/Item/48075045">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/60/1-16-2018/3674584169232424-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/60/1-16-2018/3674584169232424-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48075045</div>
+                <div class="title">
+                    Bose Sound Dock Digital Music System IOB
+                    <br>Bids: 2
+                </div>
+                <div class="excerpt">
+ITEM DESCRIPTION: in good condition,there is no physical damage, unknown of working condition,was...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$9.99</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/23/2018 9:24:35 AM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/23/2018 9:24:35 AM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48075045">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48075045">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48075045">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <input type="hidden" id="end-time" name="end-time" value="1/23/2018 7:11:00 PM" />
+    <input type="hidden" id="item-id" name="item-id" value="48155521" />
+</section>
+
+<!-- Markup Only Displayed When Printed -->
+<div class="show-print-only">
+    <div class="container">
+        <img src="/assets/images/logos/logo.png" alt="" class="logo">
+        <hr>
+        <div class="row">
+                <div class="col-xs-4">
+                    <!-- Primary Image -->
+                    <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/79375841882823nd.jpg" alt="" class="product-image">
+                </div>
+            <div class='col-xs-8'>            <div class="product-title">Google Home Voice Activated Speaker Unit</div>
+            <!-- Place A Bid -->
+                <div class="product-price">Minimum Bid: <span class="minimum-bid">$24.00</span></div>
+            <br>
+            <!-- Product Data -->
+            <ul class="product-data">
+                <li><b>Product ID: </b>48155521</li>
+                <li><b>Seller: </b>Goodwill of North Florida</li>
+                    <li><b>Ends on: </b>7:11:00 PM</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <ul class="images">
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/56991201882825nd.jpg"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/97311021882826nd.jpg"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/11437621882828nd.jpg"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/47/1-18-2018/88930461882828nd.jpg"></li>
+    </ul>
+    <br>
+    <p>Product Description <p>
+<p>Brand:Google</p>
+<p><strong>Model #: HOME 6A19AYJB29</strong></p>
+<p><strong>Manufacturer's Date:</strong></p>
+<p>Accessories: Power Cord</p>
+<p>Powers on(Y/N): YES. SOLD AS IS</p>
+<p>Measurements:</p>
+<p>Length: 5"</p>
+<p>Width: 3"</p>
+<p><strong>CONDITION: OUT OF BOX. UNIT with Plug ONLY. Full Functionality Unknown.</strong></p>
+<p>
+<p><strong>**FUNCTIONALITY DISCLAIMER**</strong></p>
+<p><strong>Note:</strong> Any testing of electronics for power and/or functionality will be mentioned within the listing above <strong>ONLY</strong> if applicable.&nbsp; In some instances we may not have the necessary equipment to test certain electronics therefore we can not verify nor guarantee full or ongoing functionality. These will be auctioned off as <strong>SOLD-AS-IS</strong> with <strong>NO</strong> refunds.&nbsp; Please keep this in mind when bidding.</p>
+<p><strong>***Condition Disclaimer***</strong></p>
+<p><strong>This lot is pre-owned and may contain unseen flaws and imperfections in addition to the information listed here. </strong>This is a USED item donated to Goodwill of North Florida.<br>Please see images for further detail and ask any questions you may have before making a bid. <br><br></p>
+<p><u><i><b>This item is NOT available for combined shipping and will be shipped via UPS GROUND.&nbsp; We currently do not ship with other carriers.&nbsp; Please utilize the shipping calculator prior to placing your bid.&nbsp; Bid retractions and cancellations will not be granted for shipping prices.</b></i><br></u><br><br>Local pick up hours are Monday - Saturday between the hours of 9:00am - 4:00pm EST and closed on Sunday.&nbsp; Our office is located at 4655 Lenox Avenue, Jacksonville, Fl., 32205.&nbsp; Please give us 24 hours advance notice prior to your pick up time.&nbsp; If items are not picked up within 10 days of the day of payment, they will be re-donated and no refund will be given.&nbsp; No exceptions.</p>
+<p>
+<p><br><!--(Store: St. Johns Bluff)--><br></p>
+</div>
+                            </div>
+
+<input type="hidden" id="update-price" />
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/logo.png" alt="" class="logo" >
+            <div class="mobile-search search">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Search Auctions..." aria-describedby="searchFooterMobile">
+                    <span class="input-group-btn" id="searchFooterMobile">
+                        <button class="btn btn-default" type="button" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+                <a href="/AdvancedSearch" class="advanced-search">Advanced Search</a>
+            </div>
+            <div class="desktop-search search">
+                <form id="search-form-footer"><input type="hidden" name="nccharset" value="BF81AFEE">
+                    <div class="input-group input-group-lg">
+                        <input aria-describedby="searchTopDeskTop" aria-label="Search Text" class="form-control" id="search-text-footer" name="SearchText" pattern=".{3,}" placeholder="Search Auctions..." required="True" title="(3 characters minimum)" type="text" value="" />
+                        <span class="input-group-btn" id="searchTopDeskTop">
+                            <button type="submit" class="btn btn-default" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                    <a href="/AdvancedSearch" class="advanced-search">Advanced Search</a>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 footer-menu-column">
+                    <h3>My Account</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/MyShopgoodwill/PersonalInfo">Personal Information</a></li>
+                        <li><a href="/MyShopgoodwill/OpenOrders">Open Orders</a></li>
+                        <li><a href="/MyShopgoodwill/ShippedOrders">Shipped Orders</a></li>
+                        <li><a href="/MyShopgoodwill/AuctionsInProgress">Auctions In Progress</a></li>
+                        <li><a href="/MyShopgoodwill/ClosedAuctions">Closed Auctions</a></li>
+                        <li><a href="/MyShopgoodwill/WatchList">Watch List</a></li>
+                        <li><a href="/MyShopgoodwill/PersonalShopper">Personal Shopper</a></li>
+                        <li><a href="/MyShopgoodwill/CustomerService">Customer Service</a></li>
+                        <li><a href="/MyShopgoodwill/SavedSearches">Saved Searches</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 footer-menu-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/Listings">All Listings</a></li>
+                        <li><a class="group-search" group="Gallery">Gallery Auctions</a></li>
+                        <li><a class="group-search" group="New">New Today</a></li>
+                        <li><a class="group-search" group="Ending">Ending Today</a></li>
+                        <li><a class="group-search" group="Going">Going Going Gone</a></li>
+                        <li><a class="group-search" group="BuyItNow">Buy It Now</a></li>
+                        <li><a class="group-search" group="Hot50">Hot 50</a></li>
+                        <li><a class="group-search" group="LastChance">Last Chance</a></li>
+                        <li><a class="group-search" group="OneCent">1¢ Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 footer-menu-column">
+                    <h3>Support</h3>
+                    <ul class="footer-menu">
+                            <li>
+                                <a id="send-feedback" data-url="/SendFeedback" data-target="#modal-feedback" data-toggle="modal" href=""><span><i class="fa fa-envelope-o hidden-xs hidden-sm hidden-md"></i> Send Feedback</span></a>
+                            </li>
+
+                        <li>
+                            <a class="large inline" href="/HelpPage/FaqDetail/current-known-issues">Known Issues</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li>Hours:</li>
+                        <li>8am - 4pm Pacific Time</li>
+                        <li>Monday - Friday</li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li><a href="http://www.goodwillbooks.com" target="_blank"><img src="https://shopgoodwillcdn.azureedge.net/assets/images/goodwillbooks.com-link-image.jpg" alt="" class="" ></a></li>
+                        <li><a href="https://www.restitch.com/?utm_source=shopgoodwill.com&utm_medium=referral&utm_campaign=20171018ShopGoodwill" target="_blank"><img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/GW_Restitch_Logo_Web_Color_Tagline.jpg" alt="" class="" ></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/shopgoodwill" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    
+                    <li><a href="https://twitter.com/shopgoodwill" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+                <ul class="legal">
+                    <li><a href="/HelpPage">Help</a></li>
+                    <li><a href="/About/PrivacyPolicy">Privacy</a></li>
+                    <li><a href="/About/PrivacyPolicy#cal-privacy"> Your California Privacy Rights </a></li>
+                    <li><a href="/About/TermsOfUse"> Terms of Use </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copy-right">© shopgoodwill.com All rights reserved.</p>
+                <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/credit-cards.png" alt="" class="cc" >
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scroll-to-top"></a>
+
+    <input data-val="true" data-val-date="The field ServerTime must be a date." data-val-required="The ServerTime field is required." id="ServerTime" name="ServerTime" type="hidden" value="1/22/2018 2:45:53 PM" />
+
+    <!-- Overlay active when mega menu is open -->
+    <div id="overlay"></div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-3956021-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="https://shopgoodwillcdn.azureedge.net/bundles/layoutjs?v=3.0.6596.23110"></script>
+
+    
+    <script src="https://shopgoodwillcdn.azureedge.net/bundles/itemjs?v=3.0.6596.23110"></script>
+
+
+    
+
+
+</body>
+</html>

@@ -27,13 +27,14 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'gem-release', '~> 0.7'
-  spec.add_development_dependency 'pry', '~> 0.10'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '~> 3.3'
-  spec.add_development_dependency 'rubocop', '~> 0.34'
-  spec.add_development_dependency 'simplecov', '~> 0.10'
-  spec.add_development_dependency 'travis', '~> 1.6'
+  spec.add_development_dependency 'gem-release'
+  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec', '~> 3.7'
+  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency 'travis'
+  spec.add_development_dependency 'webmock'
   spec.add_dependency 'parallel', '~> 1.6'
   spec.add_dependency 'highline', '~> 1.7'
   spec.add_dependency 'mechanize', '~> 2.7'

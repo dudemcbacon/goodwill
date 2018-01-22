@@ -1,0 +1,1393 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+X-AspNetMvc-Version: 5.2
+X-Frame-Options: SAMEORIGIN
+X-Frame-Options: SAMEORIGIN
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+Date: Fri, 19 Jan 2018 23:26:00 GMT
+Set-Cookie: BNI_persistence=00000000000000000000000023c6410a0000bb01; Path=/
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: __RequestVerificationToken=wBQ_XEIWLd415fG4ClvxLdbXW8KjJSyRmPFtgeAaw9bDJPVJ_2bVQHiMPawiJnmythqX-QPvvGuMrtW1DTQT9ry3p9Rz06VyjVRSPx6miZA1; path=/; secure; HttpOnly
+Transfer-Encoding: chunked
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Online Marketplace for Goodwill thrift stores">
+    
+    <meta name="keywords" content="Nintendo,GameBoy,Color" />
+
+    <title>Nintendo GameBoy Color Bundle !! - shopgoodwill.com</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://shopgoodwillcdn.azureedge.net/bundles/layoutheader?v=3.0.6596.23110"></script>
+
+
+    <link href="https://shopgoodwillcdn.azureedge.net/bundles/css?v=3.0.6596.23110" rel="stylesheet"/>
+
+
+    
+    <link href="https://shopgoodwillcdn.azureedge.net/bundles/itemcss?v=3.0.6596.23110" rel="stylesheet"/>
+
+
+
+    <link rel="canonical" href="http://www.shopgoodwill.com/">
+    
+    <script src="https://use.fontawesome.com/b9668a4273.js"></script>
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('filter-sellers');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("seller-list");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("label")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <!-- Cookie Consent popup -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#2f3490"
+                    },
+                    "button": {
+                        "background": "#f1d600"
+                    }
+                },
+                "content": {
+                    "href": "About/PrivacyPolicy"
+                }
+            })
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google AdWords -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1040865065"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag()
+        { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-1040865065');
+    </script>
+    <!-- Event snippet for Sign Up conversion page -->
+    
+</head>
+<body>
+
+    <div id="login"></div>
+
+    <div id="modal-bid" class="modal fade"></div>
+
+    <div id="modal-feedback" class="modal fade modal-lg" tabindex="-1" role="dialog"></div>
+
+    <div id="contact-seller-modal" class="modal fade" tabindex="-1" role="dialog"></div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <ul class="account-menu">
+                        <li><a href="/MyShopgoodwill/PersonalInfo">Welcome Derp</a> </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">My Shopgoodwill <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/MyShopgoodwill/PersonalInfo">Personal Information</a></li>
+                                <li><a href="/MyShopgoodwill/OpenOrders">Open Orders</a></li>
+                                <li><a href="/MyShopgoodwill/ShippedOrders">Shipped Orders</a></li>
+                                <li><a href="/MyShopgoodwill/AuctionsInProgress">Auctions In Progress</a></li>
+                                <li><a href="/MyShopgoodwill/ClosedAuctions">Closed Auctions</a></li>
+                                <li><a href="/MyShopgoodwill/WatchList">Watch List</a></li>
+                                <li><a href="/MyShopgoodwill/PersonalShopper">Personal Shopper</a></li>
+                                <li><a href="/MyShopgoodwill/CustomerService">Customer Service</a></li>
+                                <li><a href="/MyShopgoodwill/SavedSearches">Saved Searches</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/SignOut">Sign Out</a>
+                        </li>
+                    <li>
+                        <a href="/HelpPage">Help</a>
+                    </li>
+                    <li>
+                        1/22/2018 2:17:33 PM PT
+                    </li>
+                </ul>
+                <a href="/">
+                    <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/logo-white.png" alt="" class="logo mobile-logo" >
+                    <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/logo.png" alt="" class="logo desktop-logo" >
+                </a>
+                <ul class="mobile-menu-links">
+                    <li>
+                        <button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </li>
+                </ul>
+                <div class="desktop-search search">
+                    <form id="search-form-header"><input type="hidden" name="nccharset" value="BCEE0AB5">
+                        <div class="input-group input-group-lg">
+                            <input aria-describedby="searchBottomDeskTop" aria-label="Search Text" aria-required="True" class="form-control" id="search-text-header" name="SearchText" pattern=".{3,}" placeholder="Search Auctions..." required="True" title="(3 characters minimum)" type="text" value="" />
+                            <span class="input-group-btn" id="searchBottomDeskTop">
+                                <button type="submit" class="btn btn-default" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <a href="/AdvancedSearch" class="advanced-search">Advanced Search</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="mobile-search search">
+                    <form id="search-form-mobile"><input type="hidden" name="nccharset" value="BCEE0AB5">
+                        <div class="input-group input-group-lg">
+                            <input aria-describedby="searchBottomMobile" aria-label="Search Text" class="form-control" id="search-text-mobile" name="SearchText" pattern=".{3,}" placeholder="Search Auctions..." required="True" title="(3 characters minimum)" type="text" value="" />
+                            <span class="input-group-btn" id="searchBottomMobile">
+                                <button class="btn btn-default" type="submit" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar yamm navbar-default" id="navbar">
+                    <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="mobile-only"><a href="/AdvancedSearch" class="advanced-search">Advanced Search</a></li>
+                            <!-- Classic list -->
+                            <li class="dropdown yamm-fw">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Categories<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <!-- Content container to add padding -->
+                                        <div class="yamm-content">
+                                            <div class="row">
+                                                <ul class="nav-columns list-unstyled">
+                                                        <li onclick="javascript: viewListings('', '', 399);"><a href="#">** Star Wars Collectibles **</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 352);"><a href="#">** Ugly / Festive Holiday Sweaters **</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 1);"><a href="#">Antiques</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 15);"><a href="#">Art</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 336);"><a href="#">Bath &amp; Body</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 2);"><a href="#">Books/Movies/Music</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 2208);"><a href="#">Bulk</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 170);"><a href="#">Cameras &amp; Camcorders</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 10);"><a href="#">Clothing</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 4);"><a href="#">Collectibles</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 7);"><a href="#">Computers &amp; Electronics</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 8);"><a href="#">Crafts &amp; Hobbies</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 195);"><a href="#">For The Home</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 14);"><a href="#">Glass</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 6);"><a href="#">Jewelry &amp; Gemstones</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 113);"><a href="#">Miscellaneous</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 13);"><a href="#">Musical Instruments</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 215);"><a href="#">Office Supplies</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 34);"><a href="#">Pet Supplies</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 115);"><a href="#">Religious Items</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 364);"><a href="#">Science &amp; Education</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 18);"><a href="#">Seasonal &amp; Holiday</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 12);"><a href="#">Sports</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 20);"><a href="#">Tableware and Kitchenware</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 114);"><a href="#">Tools</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 9);"><a href="#">Toys/Dolls/Games</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 23);"><a href="#">Transportation</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 427);"><a href="#">Travel/Luggage</a></li>
+                                                        <li onclick="javascript: viewListings('', '', 468);"><a href="#">Wedding</a></li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="group-search" group="Gallery">Gallery Auctions</a></li>
+                            <li><a class="group-search" group="New">New Today</a></li>
+                            <li><a class="group-search" group="Ending">Ending Today</a></li>
+                            <li><a class="group-search" group="Going">Going Going Gone</a></li>
+                            <li><a class="group-search" group="BuyItNow">Buy It Now</a></li>
+                            <li><a class="group-search" group="Hot50">Hot 50</a></li>
+                            <li><a class="group-search" group="LastChance">Last Chance</a></li>
+                            <li><a class="group-search" group="OneCent">1¢ Shipping</a></li>
+                            <li class="dropdown mobile-only">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">My Shopgoodwill<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/MyShopgoodwill/PersonalInfo">Personal Information</a></li>
+                                    <li><a href="/MyShopgoodwill/OpenOrders">Open Orders</a></li>
+                                    <li><a href="/MyShopgoodwill/ShippedOrders">Shipped Orders</a></li>
+                                    <li><a href="/MyShopgoodwill/AuctionsInProgress">Auctions In Progress</a></li>
+                                    <li><a href="/MyShopgoodwill/ClosedAuctions">Closed Auctions</a></li>
+                                    <li><a href="/MyShopgoodwill/WatchList">Watch List</a></li>
+                                    <li><a href="/MyShopgoodwill/PersonalShopper">Personal Shopper</a></li>
+                                    <li><a href="/MyShopgoodwill/CustomerService">Customer Service</a></li>
+                                    <li><a href="/MyShopgoodwill/SavedSearches">Saved Searches</a></li>
+                                </ul>
+                            </li>
+                            <li class="mobile-only"><hr></li>
+                                <li class="mobile-only"><a href="/SignOut">Sign Out</a></li>
+                            <li class="mobile-only"><a href="">Contact</a></li>
+                            <li class="mobile-only"><a href="/HelpPage">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+﻿
+
+
+<section class="product-page padding">
+
+    <div class="modal fade" id="buynow-modal" style="padding:10px">
+        <div class="modal-dialog" id="sb-modal-box">
+            <div class="modal-content" style="padding:10px">
+                <div class="text-center" id="sb-modal-top">
+                    <p class="product-title"><b>Buy Now</b></p>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <b>Please confirm if you wish to buy the following item now.</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">Item</div>
+                        <div class="col-md-10">#48120725 - Nintendo GameBoy Color Bundle !!</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">Price</div>
+                        <div class="col-md-10">$0.00</div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <a id="submit-buynow" class="btn btn-theme-secondary" data-itemid="48120725" data-price="0">Buy Now</a>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align:right;">
+                            <a id="sb-cancel" data-dismiss="modal" class="btn btn-theme-primary">Do Not Buy</a>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-12"><b>If you buy the item now, you agree to purchase the item.</b></div>
+                        <div class="col-lg-12">Failure to complete the purchase after agreeing to buy now may result in termination of your bidding privileges.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="product-email-modal" tabindex="-1" role="dialog"></div>
+
+    <div class="container">
+            <div class="row" style="padding-bottom:20px">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- New Site Item Top -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-7791222870675497"
+                     data-ad-slot="8658800763"
+                     data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        <div class="row">
+            <div class="breadcrumbDiv col-lg-12">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+<li>                            <a class="category-search" category="7">Computers &amp; Electronics</a>
+</li><li>                            <a class="category-search" category="32">Home Electronics</a>
+</li><li>                            <a class="category-search" category="33">Gaming Systems &amp; Games</a>
+</li><li>                            <a class="category-search" category="304">Nintendo GameBoy</a>
+</li>                    <li class="active">Nintendo GameBoy Color Bundle !!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div id="productCarousel" class="carousel slide">
+                        <ol class="carousel-indicators">
+                                    <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#productCarousel" data-slide-to="1"></li>
+                                    <li data-target="#productCarousel" data-slide-to="2"></li>
+                                    <li data-target="#productCarousel" data-slide-to="3"></li>
+                                    <li data-target="#productCarousel" data-slide-to="4"></li>
+                                    <li data-target="#productCarousel" data-slide-to="5"></li>
+                                    <li data-target="#productCarousel" data-slide-to="6"></li>
+                                    <li data-target="#productCarousel" data-slide-to="7"></li>
+                        </ol>
+                        <div class="carousel-inner" data-chocolat-title="Product Images">
+                                    <div class="active item" data-slide-number="0">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/181942117112743rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/181942117112743rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="1">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/732703717112743rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/732703717112743rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="2">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/280202117112744rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/280202117112744rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="3">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/672481717112744rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/672481717112744rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="4">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/733191817112744rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/733191817112744rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="5">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/389211417112745rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/389211417112745rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="6">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/325418917112745rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/325418917112745rD.JPG"></a>
+                                    </div>
+                                    <div class="item" data-slide-number="7">
+                                        <a href="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/786968617112745rD.JPG" class="chocolat-image"><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/786968617112745rD.JPG"></a>
+                                    </div>
+                            <div class="magnify">
+                                <div class="fa fa-search-plus"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="product-thumbnails owl-carousel owl-theme">
+                                <div>
+                                    <a id="carousel-thumb-0" class="carousel-thumb selected">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/181942117112743rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-1" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/732703717112743rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-2" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/280202117112744rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-3" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/672481717112744rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-4" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/733191817112744rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-5" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/389211417112745rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-6" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/325418917112745rD-thumb.jpg">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a id="carousel-thumb-7" class="carousel-thumb">
+                                        <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/786968617112745rD-thumb.jpg">
+                                    </a>
+                                </div>
+                    </div>
+                </div>
+            <div class='col-xs-12 col-sm-6'>            <h1 class="product-title">Nintendo GameBoy Color Bundle !!</h1>
+            <hr>
+
+
+            <!-- Buttons for Mobile Devices -->
+            
+﻿
+<div class="purchase-mobile">
+            <!--  Buy It Now -->
+            <!-- Place A Bid -->
+                <button class="btn btn-theme-primary quick-bid" data-toggle="modal" data-target="#modal-bid" data-url="/Bid/PlaceBid" data-itemid="48120725">Place Bid</button>
+            <div class="row">
+                <div class="col-lg-12">
+                    <strong><span class="validation-summary-errors" id="bid-error"></span></strong>
+                </div>
+            </div>
+    <button class="btn btn-default watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48120725"><i class="fa fa-eye" aria-hidden="true"></i> Watch</button>
+    <button class="btn btn-default show-contact-seller"><i class="fa fa-comments" aria-hidden="true"></i> Contact Seller</button>
+</div>
+
+
+
+            <!-- Purchase Inputs for Desktop Devices -->
+            
+﻿
+<div class="purchase-desktop">
+            <!--  Buy It Now -->
+            <!-- Place A Bid -->
+                <div class="purchase">
+                    <label for="">
+                        Current Price: <span class="current-price">
+                            $78.77
+                        </span>
+                        <span class="reserve-met">
+                        </span>
+                    </label>
+                </div>
+                <div class="purchase">
+                    <label for="">Minimum Bid: <span class="minimum-bid">$79.77</span></label>
+                </div>
+                            <div class="purchase bid">
+                                <label for="">Enter your <a href="/HelpPage/FaqDetail/Automatic-Proxy-Bidding">maximum</a> bid: </label>
+                                <div class="action">
+                                    <div class="form-inline place-bid">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">$</span>
+                                                <input type="number" class="form-control" id="bidAmount" aria-label="Bid Amount">
+                                            </div>
+                                            <button id="placeBid" type="button" class="btn btn-theme-primary" data-toggle="modal" data-target="#modal-bid" data-url="/Bid/PlaceBid" data-itemid="48120725">Place Bid</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <strong><span class="validation-summary-errors" id="bid-error"></span></strong>
+                </div>
+            </div>
+
+
+    <!-- Add To Watch List -->
+    <div class="add-to-watch-list">
+        <a class="watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48120725" style="cursor:pointer;"><i class="fa fa-eye" aria-hidden="true"></i> Watch This Item</a>
+    </div>
+
+    <!-- Contact Seller -->
+    <div class="contact-seller">
+        <a class="show-contact-seller" href=""><i class="fa fa-comments" aria-hidden="true"></i> Contact Seller</a>
+    </div>
+
+    <!-- Contact Seller -->
+    <div class="print-page">
+        <a href="javascript:window.print()"><i class="fa fa-print" aria-hidden="true"></i> Print This Page</a>
+    </div>
+</div>
+
+
+
+            <p>Share This Product</p>
+            <ul class="social-share">
+                <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.shopgoodwill.com/Item/48120725" target="_blank" title="Share on Facebook"> <i class="fa fa-facebook"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Nintendo GameBoy Color Bundle !!&url=https://www.shopgoodwill.com/Item/48120725" target="_blank" title="Share on Twitter"> <i class="fa fa-twitter"></i></a></li>
+                <li class="google"><a href="https://plus.google.com/share?url=https://www.shopgoodwill.com/Item/48120725" target="_blank"> <i class="fa fa-google-plus" title="Share on Google+"></i></a></li>
+                <li class="pinterest"><a href="http://pinterest.com/pin/create/bookmarklet/?media=image&url=https://www.shopgoodwill.com/Item/48120725&is_video=false&description=Nintendo GameBoy Color Bundle !!" target="_blank" title="Share on Pinterest"> <i class="fa fa-pinterest"></i></a></li>
+                <li class="email"><a href="" id="show-product-email" data-toggle="modal" data-target="#product-email-modal" data-url="/Item/SendToFriend" data-itemid="48120725"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <!-- Product Data -->
+            <ul class="product-data">
+                <li align="center"><b>Reload this page for updates</b></li>
+                <li><b>Product ID: </b>48120725 <input id="pid" type="hidden" value="48120725" /></li>
+                    <li>
+                        <b>Number of Bids:</b><span class="num-bids">8</span>
+                        <span id="high-bidder">
+ (High Bidder: dreamydude999)                        </span>
+                    </li>
+                    <li><b>Current Price:</b><span class="current-price">$78.77</span></li>
+                                                    <li><b>Bid Increment:</b>$1.00</li>
+                                    <li><b>Shipping Price:</b>$7.99</li>
+                <li><b>Handling Price:</b>$2.99</li>
+                <li><b>Seller: </b><a href="/springfield">Land of Lincoln Goodwill</a></li>
+                    <li><b>Ends In: </b><span id="product-countdown"></span></li>
+                    <li><b>Ends On: </b>1/24/2018 7:23:00 PM Pacific Time</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="margin-top-3rem"></div>
+            <!-- Nav tabs -->
+            <div class="product-tabs">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#itemInfo" aria-controls="itemInfo" role="tab" data-toggle="tab">Item Info</a></li>
+                    <li role="presentation"><a href="#payment" aria-controls="payment" role="tab" data-toggle="tab">Payment</a></li>
+                    <li id="shipping-tab" role="presentation"><a id="show-shipping" href="#shipping-desktop" aria-controls="shipping" role="tab" data-toggle="tab">Shipping</a></li>
+                    <li role="presentation"><a href="#sellerInfo" aria-controls="sellerInfo" role="tab" data-toggle="tab">Seller Info</a></li>
+                        <li role="presentation"><a href="#bidHistory" aria-controls="bidHistory" role="tab" data-toggle="tab">Bid History</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="itemInfo"><p>Nintendo GameBoy Color Bundle !!&nbsp;</p>
+<p>
+<p><strong>7&nbsp;</strong>GameBoy&nbsp;Color Handhelds&nbsp;(5 are missing battery covers)</p>
+<p>All tested and work. All have some scratches and wear from use</p>
+<p><strong>25</strong> GameBoy&nbsp;Color GAMES !!</p>
+<p>
+<p>All have been checked for game but not quality of disc/cartridge. Games may have scratches or scuffs. Manuals may or may-not be included - Please see pictures to show what is included. Games not tested.</p>
+<p>-Sold as-is.</p>
+<p>*** If you like this game lot be sure to check out are other various game lots!! ***</p>
+<p>Lister - TD</p>
+<p><b>OUR LOCATION IS ONLY AVAILABLE FOR CUSTOMER SERVICE MON-FRI 8:00AM-4:30PM</b></p>
+<p><b>SHIPPING BY <i>UPS and FedEx</i> ONLY:</b> <b><u>AK, HI, &amp; US Territories may need to pay higher shipping - please contact us before payment!</u></b></p>
+<p><b>COMBINED SHIPPING:&nbsp; </b>Please contact us with any Combination requests BEFORE Payment.&nbsp; When practical in size and do not include breakables, may be requested for auctions that close <u>within the same week.</u> Maximum combined weight is 20 lbs. In some cases, combined shipments are more expensive due to increased box size. <u>Prior to checking out, contact us with Buyer ID and won Item ID #s.</u> <b>WE ARE UNABLE TO COMBINE ORDERS OR REMOVE SALES TAX AFTER PAYMENT.</b> We reserve the right to deny combination of items to ensure safe shipping of items. Handling charges will not be reduced.&nbsp; . <b>Items can only be combined prior to payment being received. Paid for items will be shipped as specified within the order and will not be able to be modified or combined.</b></p><br><!--(Store: 19SGW)--><br>
+</div>
+                    <div role="tabpanel" class="tab-pane" id="payment">
+<p><b>Payments MUST BE RECEIVED WITHIN seven (7) DAYS from auction close.</b></p>
+<p>
+    <b>Available Payment Methods:</b>
+    <br />
+    <div class="row">
+            <div class="col-sm-6">
+                <img src="/assets/images/payment/master_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/visa_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/discover_network_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp;  <img src="/assets/images/payment/american_express_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; 
+            </div>
+                    <div class="col-sm-6">
+                <img src="/assets/images/payment/btn_paywith_primary_m.png" /><br><img src="/assets/images/payment/PayapLogo.jpg" style="height:70px" />
+            </div>
+    </div>
+</p>
+</div>
+                    <div role="tabpanel" class="tab-pane" id="shipping-desktop">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>
+                <b><span style="font-weight:bold;">This item cannot be shipped internationally.</span></b>
+            </p>
+        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                        <b>This item ships via FedEx</b>
+                            <b><span style="color:darkred; font-weight:bold;">Shipment Cannot Be Combined With Other Items</span></b>
+                    </p>
+                    <p><span>Shipping Weight: 5 lbs.</span><br /><span>This item has a fixed shipping price of $10.98 (Shipping + Handling)</span></p>
+                </div>
+    </div>
+</div>
+                    <div role="tabpanel" class="tab-pane" id="sellerInfo">
+<h4><b>Seller:</b></h4>
+<p>Land of Lincoln Goodwill</p>
+<h4><b>Location:</b></h4>
+<p>Springfield, IL</p>
+<h4><b>Seller Contact Information:</b></h4>
+<p>Land of Lincoln Goodwill<br />LLGI shopgoodwill, 2001 W.  Wabash Avenue<br />Springfield, IL 62704<br /><a class="show-contact-seller" href=""><i class="fa fa-comments" aria-hidden="true"></i> Contact Us</a></p>
+<p>Items are shipped using a major carrier usually within 5 business days after receipt of payment. Shipping charges are calculated at payment time.</p>
+<br />
+<p><p><b>PLEASE READ AND UNDERSTAND THE FULL DESCRIPTION.  ASK ANY QUESTIONS PRIOR TO BIDDING, STAFF IS NOT AVAILABLE ON WEEKENDS TO ANSWER SO ASK EARLY.  WE ENCOURAGE YOU TO "GET ESTIMATED SHIPPING & HANDLING" BY CLICKING ON THE LINK ABOVE & BIDDING ACCORDINGLY.</b>.<p> 
+
+<p>Items have been donated and not officially appraised, certified or authenticated unless otherwise specified. By bidding on this item the buyer understands and accepts that items are represented, through description and pictures, to the best of our ability. Bids are placed with the knowledge that this is a used and/or old item and may contain unseen faults that the buyer takes responsibility for. Please contact us prior to bidding to clarify any questions or concerns about an item.  All items are sold <b><u>AS IS.</u></b>..</p>
+
+<p><b>PAYMENT POLICY:</b>  On all auctions, payment must be received within 7 days from auction close. Auctions may be easily & securely paid online with MasterCard or Visa. Paypal also accepted. We DO NOT accept cash, checks, or money orders. Handling fees cannot be refunded.</p>
+
+<b>SHIPPING:</b> Please see the Seller section of the auction to determine shipper. All Items over 8 pounds will automatically ship via UPS Ground or FedEx Ground/Home Delivery. UPS/FedEx will not deliver to PO BOX or APO addresses, please enter street address at time of payment. Shipping cost calculated by UPS/FedEx, based on item weight and dimension.  For some smaller and lightweight Items we use SurePost through UPS (These services have final delivery via USPS and a Mail Receptacle is required). Any single or combined orders over $100.00 will automatically be shipped UPS Ground or FedEx and shipping charges will be adjusted to reflect that - Any Items over $100.00 or Jewelry over $50.00 will be signature required unless requested otherwise.  If the item is such that it is small and nonbreakable and can otherwise be shipped via SurePost we will only do so with written consent and the customer expressly waives the need for insurance.  We will not be responsible for <b>intentionally uninsured</b> packages and they will not be refunded if lost, stolen, or damaged.  <b>We DO NOT use US Post Office.</b>.</p>
+
+<p><b>PICK-UPS:</b> By appointment only Monday through Friday (9:00 AM to 4:00 PM) with a minimum of 24 hours notice. Contact or call (217-726-8906) in advance to discuss pickup details. Pickups require payment in advance and photo ID. Pick-ups can be made at 2001 Wabash Ave., Springfield, IL 62704. <b>No payments will be accepted on site.</b> Pick-up items are charged the stated handling fee and tax when applicable. Please pick-up item within 14 days of auction close, otherwise a restocking fee may be charged (if items are not picked up within the stated time frame, they will be considered a donation and re-listed and no refund given).</p>
+
+<p><b>RETURN POLICY:</b> Your satisfaction is very important to us. Please contact us with any problems within 3 days of receipt to request an Authorization for Return or to simply provide helpful feedback. All items are sold <b>AS-IS, AS-DESCRIBED</b> and are non-refundable unless there was a notable discrepancy in written and/or photo description. Approved returns must be received within 7 days of approval, in the same condition as sold. <b><u>All unauthorized returns will be considered a donation and re-listed without refund.  Unless damaged or otherwise not described correctly any return that is considered to be "buyers remorse" will ONLY receive item price, minus a 15% restocking fee will be refunded to the customer - NO shipping or handling.</u></b></p>
+<p><b>Damaged in Shipping:</b> If the item was damaged during shipment, we will need a photograph of the damage, with statement from the customer prior to refund. UPS requires item to remain in original packaging and box for all claims processed and can take up to 10 business days for processing. Once the returned item is received at our facility a full refund will be issued.</p>
+<p><b>Unclaimed Returns:</b> If an item is unclaimed or returned without authorization, the customer will be contacted and has 3 business days to pay an additional shipping charge to resend the item. If not paid after 3 business days, ONLY item price, minus a 15% restocking fee will be refunded to the customer - NO shipping or handling.</p>
+<p><b>Local Pickup Returns:</b>
+Items selected for pick up from the seller, must be picked up within 14 days from close of auction. <b>Items not picked up from seller within 14 days from close of auction will be considered a donation and resold with no further notice.</b>  Under certain circumstances we can retain items longer if necessary under a case by case basis.</p></p>
+<h4><b>Return Policy:</b></h4>
+<p>
+    Please contact us for any return within three days of receipt of the item for authorization of the return.  All return requests will be considered on a case by case basis.  If the item was damaged during shipment, UPS will collect the shipment and a total refund will be issued.  Item description distortion refunds will be issued on a case by case basis.  All items are sold "AS IS." Bidder is responsible to check for updates to listings.
+</p>
+<p><b><u><a href="/Listings/Seller/132">View other items for sale by this seller</a></u></b></p>
+</div>
+                        <div role="tabpanel" class="tab-pane" id="bidHistory">﻿
+<div id="bid-history">
+        <table>
+            <tr>
+                <td>
+                    <a class="show-complete-bids" style="display:inline; cursor:pointer;">Show Complete Bid History</a>
+                    <a class="show-summary-bids" style="display:none; cursor:pointer;">Show Bid History Summary</a>
+                </td>
+            </tr>
+        </table>
+        <table class="bid-summary" style="display:inline">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">Time of last bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                            <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/22/2018 2:05:50 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/18/2018 5:01:43 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B******d</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/19/2018 8:59:42 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/18/2018 8:45:25 PM</td>
+                </tr>
+                    </table>
+        <table class="bid-complete" style="display:none">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">High Bidder</td>
+                <td style="padding:5px">Item Price</td>
+                <td style="padding:5px">Time of bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                            <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                                                                <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                    <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                    <td style="padding-right:5px; padding-left:5px">1/22/2018 2:05:50 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                            <td style="padding-right:5px; padding-left:5px">$75.00</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$76.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/22/2018 2:05:41 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">m********1</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">m********1</td>
+                    <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 7:26:46 AM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">m********1</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$76.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 7:26:32 AM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B******d</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$51.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 8:59:42 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$25.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:45:25 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$20.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:45:06 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$13.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:44:50 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:44:31 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$6.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 5:01:43 PM</td>
+                </tr>
+                    </table>
+</div>
+</div>
+                </div>
+            </div>
+            <div class="product-accordion">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Item Info
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>Nintendo GameBoy Color Bundle !!&nbsp;</p>
+<p>
+<p><strong>7&nbsp;</strong>GameBoy&nbsp;Color Handhelds&nbsp;(5 are missing battery covers)</p>
+<p>All tested and work. All have some scratches and wear from use</p>
+<p><strong>25</strong> GameBoy&nbsp;Color GAMES !!</p>
+<p>
+<p>All have been checked for game but not quality of disc/cartridge. Games may have scratches or scuffs. Manuals may or may-not be included - Please see pictures to show what is included. Games not tested.</p>
+<p>-Sold as-is.</p>
+<p>*** If you like this game lot be sure to check out are other various game lots!! ***</p>
+<p>Lister - TD</p>
+<p><b>OUR LOCATION IS ONLY AVAILABLE FOR CUSTOMER SERVICE MON-FRI 8:00AM-4:30PM</b></p>
+<p><b>SHIPPING BY <i>UPS and FedEx</i> ONLY:</b> <b><u>AK, HI, &amp; US Territories may need to pay higher shipping - please contact us before payment!</u></b></p>
+<p><b>COMBINED SHIPPING:&nbsp; </b>Please contact us with any Combination requests BEFORE Payment.&nbsp; When practical in size and do not include breakables, may be requested for auctions that close <u>within the same week.</u> Maximum combined weight is 20 lbs. In some cases, combined shipments are more expensive due to increased box size. <u>Prior to checking out, contact us with Buyer ID and won Item ID #s.</u> <b>WE ARE UNABLE TO COMBINE ORDERS OR REMOVE SALES TAX AFTER PAYMENT.</b> We reserve the right to deny combination of items to ensure safe shipping of items. Handling charges will not be reduced.&nbsp; . <b>Items can only be combined prior to payment being received. Paid for items will be shipped as specified within the order and will not be able to be modified or combined.</b></p><br><!--(Store: 19SGW)--><br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Payment
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                
+<p><b>Payments MUST BE RECEIVED WITHIN seven (7) DAYS from auction close.</b></p>
+<p>
+    <b>Available Payment Methods:</b>
+    <br />
+    <div class="row">
+            <div class="col-sm-6">
+                <img src="/assets/images/payment/master_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/visa_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; <img src="/assets/images/payment/discover_network_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp;  <img src="/assets/images/payment/american_express_card.png" style="height: 40px" /> &nbsp;&nbsp;&nbsp; 
+            </div>
+                    <div class="col-sm-6">
+                <img src="/assets/images/payment/btn_paywith_primary_m.png" /><br><img src="/assets/images/payment/PayapLogo.jpg" style="height:70px" />
+            </div>
+    </div>
+</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shipping-tab-mobile" class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a id="show-shipping-mobile" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Shipping
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div id="shipping-mobile" class="panel-body">
+                                
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>
+                <b><span style="font-weight:bold;">This item cannot be shipped internationally.</span></b>
+            </p>
+        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                        <b>This item ships via FedEx</b>
+                            <b><span style="color:darkred; font-weight:bold;">Shipment Cannot Be Combined With Other Items</span></b>
+                    </p>
+                    <p><span>Shipping Weight: 5 lbs.</span><br /><span>This item has a fixed shipping price of $10.98 (Shipping + Handling)</span></p>
+                </div>
+    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Seller Info
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                
+<h4><b>Seller:</b></h4>
+<p>Land of Lincoln Goodwill</p>
+<h4><b>Location:</b></h4>
+<p>Springfield, IL</p>
+<h4><b>Seller Contact Information:</b></h4>
+<p>Land of Lincoln Goodwill<br />LLGI shopgoodwill, 2001 W.  Wabash Avenue<br />Springfield, IL 62704<br /><a class="show-contact-seller" href=""><i class="fa fa-comments" aria-hidden="true"></i> Contact Us</a></p>
+<p>Items are shipped using a major carrier usually within 5 business days after receipt of payment. Shipping charges are calculated at payment time.</p>
+<br />
+<p><p><b>PLEASE READ AND UNDERSTAND THE FULL DESCRIPTION.  ASK ANY QUESTIONS PRIOR TO BIDDING, STAFF IS NOT AVAILABLE ON WEEKENDS TO ANSWER SO ASK EARLY.  WE ENCOURAGE YOU TO "GET ESTIMATED SHIPPING & HANDLING" BY CLICKING ON THE LINK ABOVE & BIDDING ACCORDINGLY.</b>.<p> 
+
+<p>Items have been donated and not officially appraised, certified or authenticated unless otherwise specified. By bidding on this item the buyer understands and accepts that items are represented, through description and pictures, to the best of our ability. Bids are placed with the knowledge that this is a used and/or old item and may contain unseen faults that the buyer takes responsibility for. Please contact us prior to bidding to clarify any questions or concerns about an item.  All items are sold <b><u>AS IS.</u></b>..</p>
+
+<p><b>PAYMENT POLICY:</b>  On all auctions, payment must be received within 7 days from auction close. Auctions may be easily & securely paid online with MasterCard or Visa. Paypal also accepted. We DO NOT accept cash, checks, or money orders. Handling fees cannot be refunded.</p>
+
+<b>SHIPPING:</b> Please see the Seller section of the auction to determine shipper. All Items over 8 pounds will automatically ship via UPS Ground or FedEx Ground/Home Delivery. UPS/FedEx will not deliver to PO BOX or APO addresses, please enter street address at time of payment. Shipping cost calculated by UPS/FedEx, based on item weight and dimension.  For some smaller and lightweight Items we use SurePost through UPS (These services have final delivery via USPS and a Mail Receptacle is required). Any single or combined orders over $100.00 will automatically be shipped UPS Ground or FedEx and shipping charges will be adjusted to reflect that - Any Items over $100.00 or Jewelry over $50.00 will be signature required unless requested otherwise.  If the item is such that it is small and nonbreakable and can otherwise be shipped via SurePost we will only do so with written consent and the customer expressly waives the need for insurance.  We will not be responsible for <b>intentionally uninsured</b> packages and they will not be refunded if lost, stolen, or damaged.  <b>We DO NOT use US Post Office.</b>.</p>
+
+<p><b>PICK-UPS:</b> By appointment only Monday through Friday (9:00 AM to 4:00 PM) with a minimum of 24 hours notice. Contact or call (217-726-8906) in advance to discuss pickup details. Pickups require payment in advance and photo ID. Pick-ups can be made at 2001 Wabash Ave., Springfield, IL 62704. <b>No payments will be accepted on site.</b> Pick-up items are charged the stated handling fee and tax when applicable. Please pick-up item within 14 days of auction close, otherwise a restocking fee may be charged (if items are not picked up within the stated time frame, they will be considered a donation and re-listed and no refund given).</p>
+
+<p><b>RETURN POLICY:</b> Your satisfaction is very important to us. Please contact us with any problems within 3 days of receipt to request an Authorization for Return or to simply provide helpful feedback. All items are sold <b>AS-IS, AS-DESCRIBED</b> and are non-refundable unless there was a notable discrepancy in written and/or photo description. Approved returns must be received within 7 days of approval, in the same condition as sold. <b><u>All unauthorized returns will be considered a donation and re-listed without refund.  Unless damaged or otherwise not described correctly any return that is considered to be "buyers remorse" will ONLY receive item price, minus a 15% restocking fee will be refunded to the customer - NO shipping or handling.</u></b></p>
+<p><b>Damaged in Shipping:</b> If the item was damaged during shipment, we will need a photograph of the damage, with statement from the customer prior to refund. UPS requires item to remain in original packaging and box for all claims processed and can take up to 10 business days for processing. Once the returned item is received at our facility a full refund will be issued.</p>
+<p><b>Unclaimed Returns:</b> If an item is unclaimed or returned without authorization, the customer will be contacted and has 3 business days to pay an additional shipping charge to resend the item. If not paid after 3 business days, ONLY item price, minus a 15% restocking fee will be refunded to the customer - NO shipping or handling.</p>
+<p><b>Local Pickup Returns:</b>
+Items selected for pick up from the seller, must be picked up within 14 days from close of auction. <b>Items not picked up from seller within 14 days from close of auction will be considered a donation and resold with no further notice.</b>  Under certain circumstances we can retain items longer if necessary under a case by case basis.</p></p>
+<h4><b>Return Policy:</b></h4>
+<p>
+    Please contact us for any return within three days of receipt of the item for authorization of the return.  All return requests will be considered on a case by case basis.  If the item was damaged during shipment, UPS will collect the shipment and a total refund will be issued.  Item description distortion refunds will be issued on a case by case basis.  All items are sold "AS IS." Bidder is responsible to check for updates to listings.
+</p>
+<p><b><u><a href="/Listings/Seller/132">View other items for sale by this seller</a></u></b></p>
+
+                            </div>
+                        </div>
+                    </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Bid History
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    ﻿
+<div id="bid-history">
+        <table>
+            <tr>
+                <td>
+                    <a class="show-complete-bids" style="display:inline; cursor:pointer;">Show Complete Bid History</a>
+                    <a class="show-summary-bids" style="display:none; cursor:pointer;">Show Bid History Summary</a>
+                </td>
+            </tr>
+        </table>
+        <table class="bid-summary" style="display:inline">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">Time of last bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                            <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/22/2018 2:05:50 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/18/2018 5:01:43 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B******d</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/19/2018 8:59:42 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                        <td style="padding-right:5px; padding-left:5px">1/18/2018 8:45:25 PM</td>
+                </tr>
+                    </table>
+        <table class="bid-complete" style="display:none">
+            <tr>
+                <td style="padding:5px">Bidder</td>
+                <td style="padding:5px">Bid Amount</td>
+                <td style="padding:5px">High Bidder</td>
+                <td style="padding:5px">Item Price</td>
+                <td style="padding:5px">Time of bid</td>
+            </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                            <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                                                                <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                    <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                    <td style="padding-right:5px; padding-left:5px">1/22/2018 2:05:50 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">dreamydude999</td>
+                            <td style="padding-right:5px; padding-left:5px">$75.00</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$76.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/22/2018 2:05:41 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">m********1</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">m********1</td>
+                    <td style="padding-right:5px; padding-left:5px">$78.77</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 7:26:46 AM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">m********1</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$76.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/20/2018 7:26:32 AM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B******d</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$51.00</td>
+                    <td style="padding-right:5px; padding-left:5px">1/19/2018 8:59:42 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$25.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:45:25 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$20.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:45:06 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$13.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:44:50 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">B*****6</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$10.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 8:44:31 PM</td>
+                </tr>
+                <tr>
+                            <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                                <td style="padding-right:5px; padding-left:5px">Bid amount hidden until end of auction</td>
+                                                                <td style="padding-right:5px; padding-left:5px">H*******5</td>
+                    <td style="padding-right:5px; padding-left:5px">$6.99</td>
+                    <td style="padding-right:5px; padding-left:5px">1/18/2018 5:01:43 PM</td>
+                </tr>
+                    </table>
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <section class="product-grid grid-view">
+                <div class="container">
+                        <div class="row" style="padding-bottom:20px">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- New Site Item Top -->
+                            <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-7791222870675497"
+                                 data-ad-slot="8658800763"
+                                 data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    <h2 class="heading">You May Also Like <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+                    <div class="line-icon"></div>
+
+                    <ul class="products">
+
+<li class="widget">
+    <a class="product" href="/Item/48017470">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/140/12-26-2017/29005062665553in-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/140/12-26-2017/29005062665553in-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48017470</div>
+                <div class="title">
+                    Pokemon Blue Version For Nintendo Game Boy Color
+                    <br>Bids: 4
+                </div>
+                <div class="excerpt">You are bidding on the pictured video game.
+Game Name:Pokemon Blue Version
+System the game is...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$10.99</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/22/2018 6:30:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/22/2018 6:30:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48017470">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48017470">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48017470">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>
+<li class="widget">
+    <a class="product" href="/Item/48022855">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/18/1-15-2018/64242181571412iR-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/18/1-15-2018/64242181571412ir-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48022855</div>
+                <div class="title">
+                    Nintendo Gameboy Color CGB-001 Green/ No Games
+                    <br>Bids: 15
+                </div>
+                <div class="excerpt">Description:&#160;Nintendo Gameboy Color CGB-001 Green/ No...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$51.99</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/22/2018 7:34:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/22/2018 7:34:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48022855">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48022855">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48022855">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>
+<li class="widget">
+    <a class="product" href="/Item/48035824">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/56/1-15-2018/567333315115132te-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/56/1-15-2018/567333315115132te-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48035824</div>
+                <div class="title">
+                    GameBoy Pocket Yellow W Games Donkey Kong &amp; More
+                    <br>Bids: 7
+                </div>
+                <div class="excerpt">Available for auction today:GameBoy Pocket Yellow W Games Donkey Kong &amp; More
+
+Included:1 gameboy...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$32.00</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/22/2018 7:48:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/22/2018 7:48:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48035824">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48035824">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48035824">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>
+<li class="widget">
+    <a class="product" href="/Item/48064988">
+        <div class="image">
+
+            <img class="lazy-load" src="https://sgws3productimages.azureedge.net/sgwproductimages/images/102/1-16-2018/10541931664139in-thumb.jpg" data-src="https://sgws3productimages.azureedge.net/sgwproductimages/images/102/1-16-2018/10541931664139in-thumb.jpg" alt="" data-adaptive-background="1">
+            <ul class="badges">
+                            </ul>
+        </div>
+
+        <span class="data-container">
+            <div class="product-data">
+                <div class="product-number"><span>Product #: </span>48064988</div>
+                <div class="title">
+                    GameBoy Color with 7 Games and a Case
+                    <br>Bids: 4
+                </div>
+                <div class="excerpt">Description: This is a GameBoy&#160;Color handheld game system with 7 games, a light, and a...</div>
+            </div>
+
+            <div class="product-price">
+                <div class="price">$23.32</div>
+                    <div class="timer countdown product-countdown" data-countdown="1/23/2018 8:30:00 PM"></div>
+                    <div class="timer countdown-classic product-countdown" data-countdown="1/23/2018 8:30:00 PM"></div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="...">
+                    <button class="btn btn-theme-primary">Place a Bid</button>
+                    <!-- <button class="btn btn-theme-secondary">Buy It Now</button> -->
+                    <button class="btn btn-default watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48064988">Watch</button>
+                </div>
+            </div>
+        </span>
+
+        <div class="hover-actions">
+                    <button class="view">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        view
+                    </button>
+                    <button class="quick-bid" data-itemid="48064988">
+                        <i class="fa fa-gavel" aria-hidden="true"></i>
+                        quick bid
+                    </button>
+                    <button class="watch watchlist" data-url="/MyShopgoodwill/AddToWatchList" data-itemid="48064988">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        watch
+                    </button>
+        </div>
+    </a>
+</li>                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <input type="hidden" id="end-time" name="end-time" value="1/24/2018 7:23:00 PM" />
+    <input type="hidden" id="item-id" name="item-id" value="48120725" />
+</section>
+
+<!-- Markup Only Displayed When Printed -->
+<div class="show-print-only">
+    <div class="container">
+        <img src="/assets/images/logos/logo.png" alt="" class="logo">
+        <hr>
+        <div class="row">
+                <div class="col-xs-4">
+                    <!-- Primary Image -->
+                    <img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/181942117112743rD.JPG" alt="" class="product-image">
+                </div>
+            <div class='col-xs-8'>            <div class="product-title">Nintendo GameBoy Color Bundle !!</div>
+            <!-- Place A Bid -->
+                <div class="product-price">Minimum Bid: <span class="minimum-bid">$79.77</span></div>
+            <br>
+            <!-- Product Data -->
+            <ul class="product-data">
+                <li><b>Product ID: </b>48120725</li>
+                <li><b>Seller: </b>Land of Lincoln Goodwill</li>
+                    <li><b>Ends on: </b>7:23:00 PM</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <ul class="images">
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/732703717112743rD.JPG"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/280202117112744rD.JPG"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/672481717112744rD.JPG"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/733191817112744rD.JPG"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/389211417112745rD.JPG"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/325418917112745rD.JPG"></li>
+            <li><img src="https://sgws3productimages.azureedge.net/sgwproductimages/images/132/1-17-2018/786968617112745rD.JPG"></li>
+    </ul>
+    <br>
+    <p>Product Description <p>Nintendo GameBoy Color Bundle !!&nbsp;</p>
+<p>
+<p><strong>7&nbsp;</strong>GameBoy&nbsp;Color Handhelds&nbsp;(5 are missing battery covers)</p>
+<p>All tested and work. All have some scratches and wear from use</p>
+<p><strong>25</strong> GameBoy&nbsp;Color GAMES !!</p>
+<p>
+<p>All have been checked for game but not quality of disc/cartridge. Games may have scratches or scuffs. Manuals may or may-not be included - Please see pictures to show what is included. Games not tested.</p>
+<p>-Sold as-is.</p>
+<p>*** If you like this game lot be sure to check out are other various game lots!! ***</p>
+<p>Lister - TD</p>
+<p><b>OUR LOCATION IS ONLY AVAILABLE FOR CUSTOMER SERVICE MON-FRI 8:00AM-4:30PM</b></p>
+<p><b>SHIPPING BY <i>UPS and FedEx</i> ONLY:</b> <b><u>AK, HI, &amp; US Territories may need to pay higher shipping - please contact us before payment!</u></b></p>
+<p><b>COMBINED SHIPPING:&nbsp; </b>Please contact us with any Combination requests BEFORE Payment.&nbsp; When practical in size and do not include breakables, may be requested for auctions that close <u>within the same week.</u> Maximum combined weight is 20 lbs. In some cases, combined shipments are more expensive due to increased box size. <u>Prior to checking out, contact us with Buyer ID and won Item ID #s.</u> <b>WE ARE UNABLE TO COMBINE ORDERS OR REMOVE SALES TAX AFTER PAYMENT.</b> We reserve the right to deny combination of items to ensure safe shipping of items. Handling charges will not be reduced.&nbsp; . <b>Items can only be combined prior to payment being received. Paid for items will be shipped as specified within the order and will not be able to be modified or combined.</b></p><br><!--(Store: 19SGW)--><br></p>
+</div>
+                            </div>
+
+<input type="hidden" id="update-price" />
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/logo.png" alt="" class="logo" >
+            <div class="mobile-search search">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="Search Auctions..." aria-describedby="searchFooterMobile">
+                    <span class="input-group-btn" id="searchFooterMobile">
+                        <button class="btn btn-default" type="button" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+                <a href="/AdvancedSearch" class="advanced-search">Advanced Search</a>
+            </div>
+            <div class="desktop-search search">
+                <form id="search-form-footer"><input type="hidden" name="nccharset" value="BCEE0AB5">
+                    <div class="input-group input-group-lg">
+                        <input aria-describedby="searchTopDeskTop" aria-label="Search Text" class="form-control" id="search-text-footer" name="SearchText" pattern=".{3,}" placeholder="Search Auctions..." required="True" title="(3 characters minimum)" type="text" value="" />
+                        <span class="input-group-btn" id="searchTopDeskTop">
+                            <button type="submit" class="btn btn-default" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                    <a href="/AdvancedSearch" class="advanced-search">Advanced Search</a>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 footer-menu-column">
+                    <h3>My Account</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/MyShopgoodwill/PersonalInfo">Personal Information</a></li>
+                        <li><a href="/MyShopgoodwill/OpenOrders">Open Orders</a></li>
+                        <li><a href="/MyShopgoodwill/ShippedOrders">Shipped Orders</a></li>
+                        <li><a href="/MyShopgoodwill/AuctionsInProgress">Auctions In Progress</a></li>
+                        <li><a href="/MyShopgoodwill/ClosedAuctions">Closed Auctions</a></li>
+                        <li><a href="/MyShopgoodwill/WatchList">Watch List</a></li>
+                        <li><a href="/MyShopgoodwill/PersonalShopper">Personal Shopper</a></li>
+                        <li><a href="/MyShopgoodwill/CustomerService">Customer Service</a></li>
+                        <li><a href="/MyShopgoodwill/SavedSearches">Saved Searches</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 footer-menu-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-menu">
+                        <li><a href="/Listings">All Listings</a></li>
+                        <li><a class="group-search" group="Gallery">Gallery Auctions</a></li>
+                        <li><a class="group-search" group="New">New Today</a></li>
+                        <li><a class="group-search" group="Ending">Ending Today</a></li>
+                        <li><a class="group-search" group="Going">Going Going Gone</a></li>
+                        <li><a class="group-search" group="BuyItNow">Buy It Now</a></li>
+                        <li><a class="group-search" group="Hot50">Hot 50</a></li>
+                        <li><a class="group-search" group="LastChance">Last Chance</a></li>
+                        <li><a class="group-search" group="OneCent">1¢ Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 footer-menu-column">
+                    <h3>Support</h3>
+                    <ul class="footer-menu">
+                            <li>
+                                <a id="send-feedback" data-url="/SendFeedback" data-target="#modal-feedback" data-toggle="modal" href=""><span><i class="fa fa-envelope-o hidden-xs hidden-sm hidden-md"></i> Send Feedback</span></a>
+                            </li>
+
+                        <li>
+                            <a class="large inline" href="/HelpPage/FaqDetail/current-known-issues">Known Issues</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li>Hours:</li>
+                        <li>8am - 4pm Pacific Time</li>
+                        <li>Monday - Friday</li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li><a href="http://www.goodwillbooks.com" target="_blank"><img src="https://shopgoodwillcdn.azureedge.net/assets/images/goodwillbooks.com-link-image.jpg" alt="" class="" ></a></li>
+                        <li><a href="https://www.restitch.com/?utm_source=shopgoodwill.com&utm_medium=referral&utm_campaign=20171018ShopGoodwill" target="_blank"><img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/GW_Restitch_Logo_Web_Color_Tagline.jpg" alt="" class="" ></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container">
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/shopgoodwill" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    
+                    <li><a href="https://twitter.com/shopgoodwill" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+                <ul class="legal">
+                    <li><a href="/HelpPage">Help</a></li>
+                    <li><a href="/About/PrivacyPolicy">Privacy</a></li>
+                    <li><a href="/About/PrivacyPolicy#cal-privacy"> Your California Privacy Rights </a></li>
+                    <li><a href="/About/TermsOfUse"> Terms of Use </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copy-right">© shopgoodwill.com All rights reserved.</p>
+                <img src="https://shopgoodwillcdn.azureedge.net/assets/images/logos/credit-cards.png" alt="" class="cc" >
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scroll-to-top"></a>
+
+    <input data-val="true" data-val-date="The field ServerTime must be a date." data-val-required="The ServerTime field is required." id="ServerTime" name="ServerTime" type="hidden" value="1/22/2018 2:17:33 PM" />
+
+    <!-- Overlay active when mega menu is open -->
+    <div id="overlay"></div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-3956021-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script src="https://shopgoodwillcdn.azureedge.net/bundles/layoutjs?v=3.0.6596.23110"></script>
+
+    
+    <script src="https://shopgoodwillcdn.azureedge.net/bundles/itemjs?v=3.0.6596.23110"></script>
+
+
+    
+
+
+</body>
+</html>

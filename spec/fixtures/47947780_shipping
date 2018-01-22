@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+X-AspNetMvc-Version: 5.2
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+Date: Fri, 19 Jan 2018 23:55:12 GMT
+Set-Cookie: BNI_persistence=00000000000000000000000022c6410a0000bb01; Path=/
+Strict-Transport-Security: max-age=31536000
+Transfer-Encoding: chunked
+
+<p>Estimated Shipping and Handling:</p><p>Shipped From: Spokane, WA 99202</p><p>Shipping Carrier: FedEx<br>(Due to variable fuel surcharges from this carrier, your final price may vary slightly.)</p><p>Address:  OR 97222 United States</p><p>Shipping: <span id='shipping-span'>$4.75 (GROUND_HOME_DELIVERY)</span></p><p>Handling: $3.00</p><p><b>Total Shipping and Handling: $7.75</b></p>

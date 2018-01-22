@@ -1,68 +1,72 @@
+require 'goodwill/urlpaths'
 require 'spec_helper'
 require 'pry'
 
 describe Goodwill::Auction do
   before do
-    mech = Mechanize.new
-    sample = mech.get('file:///' + File.expand_path('./spec/fixtures/sample_auction.html'))
-    shipping = mech.get('file:///' + File.expand_path('./spec/fixtures/sample_auction_shipping.html'))
-    mock = double('mechanize')
-    params = '?itemid=25508822&zip=97222&state=OR&country=United States'
-    allow(mock).to receive(:get).with(ITEM_SEARCH_URL + '25508822').and_return(sample)
-    allow(mock).to receive(:get).with(SHIPPING_URL + params).and_return(shipping)
-    expect_any_instance_of(Goodwill::Auction).to receive(:mechanize).twice.and_return(mock)
+    stub_request(:get, "https://www.shopgoodwill.com/SignIn")
+      .to_return(File.new("spec/fixtures/SignIn.html_get"))
+
+    stub_request(:post, "https://www.shopgoodwill.com/SignIn")
+      .to_return(File.new("spec/fixtures/SignIn.html_post"))
+
+    stub_request(:get, "https://www.shopgoodwill.com/viewItem.asp?itemID=47947780")
+      .to_return(File.new("spec/fixtures/47947780.html"))
+
+    stub_request(:get, /CalculateShipping/)
+      .to_return(File.new("spec/fixtures/47947780_shipping"))
   end
 
-  let(:auction) { Goodwill::Auction.new(25_508_822) }
+  let(:auction) { Goodwill::Auction.new(47947780) }
 
   describe '#initialize' do
     it 'should be able to report the number of bids' do
-      bids = 10
+      bids = 0
       result = auction.bids
       expect(result.class).to eq(Fixnum)
       expect(result).to eq(bids)
     end
 
     it 'should be able to report the current price' do
-      current = 411.0
+      current = 7.99
       result = auction.current
       expect(result.class).to eq(Float)
       expect(result).to eq(current)
     end
 
     it 'should be able to report the end time' do
-      time = DateTime.strptime('2015-11-08T17:43:53+00:00')
+      time = DateTime.strptime('1/19/2018 3:06:26 PM Pacific Time', '%m/%d/%Y %l:%M:%S %p %Z')
       result = auction.end
       expect(result.class).to eq(DateTime)
       expect(result).to eq(time)
     end
 
     it 'should be able to report the href' do
-      href = 'http://www.shopgoodwill.com/viewItem.asp?itemID=25508822'
+      href = "https://www.shopgoodwill.com/viewItem.asp?itemID=47947780"
       result = auction.href
       expect(result).to eq(href)
     end
 
     it 'should be able to report the item name' do
-      item = 'New 18K White Gold Emerald & Diamond Ring  (DL)'
+      item = "Clark's Black Leather Mid-Heel Shoe Size M"
       result = auction.item
       expect(result).to eq(item)
     end
 
     it 'should be able to report the itemid' do
-      itemid = 25_508_822
+      itemid = 47947780
       result = auction.itemid
       expect(result).to eq(itemid)
     end
 
     it 'should be able to report the seller' do
-      seller = 'Licking/Knox Goodwill Industries, Inc.'
+      seller = 'Goodwill Industries of the Inland Northwest'
       result = auction.seller
       expect(result).to eq(seller)
     end
 
     it 'should be able to report the shipping price' do
-      shipping = 30.63
+      shipping = 7.75
       result = auction.shipping
       expect(result.class).to eq(Float)
       expect(result).to eq(shipping)
@@ -72,25 +76,25 @@ describe Goodwill::Auction do
   describe '#==' do
     it 'should be able to equate similar items' do
       result = auction
-      expect(result).to eq(instance_double('Goodwill::Auction', itemid: 25_508_822))
+      expect(result).to eq(instance_double('Goodwill::Auction', itemid: 47947780))
     end
   end
 
   describe '#to_hash' do
     it 'should be able to transform an auction into a hash' do
       hash = {
-        'itemid' => 25_508_822,
         'zipcode' => '97222',
         'state' => 'OR',
         'country' => 'United States',
-        'href' => 'http://www.shopgoodwill.com/viewItem.asp?itemID=25508822',
-        'bids' => 10,
-        'current' => 411.0,
-        'end' => '2015-11-08T17:43:53+00:00',
-        'item' => 'New 18K White Gold Emerald & Diamond Ring  (DL)',
-        'seller' => 'Licking/Knox Goodwill Industries, Inc.',
+        'bids' => 0,
+        'current' => 7.99,
+        'end' => '2018-01-19T15:06:26-08:00',
+        'href' => 'https://www.shopgoodwill.com/viewItem.asp?itemID=47947780',
+        'item' => "Clark's Black Leather Mid-Heel Shoe Size M",
+        'itemid' => 47947780,
+        'seller' => 'Goodwill Industries of the Inland Northwest',
+        'shipping' => 7.75,
         'bidding' => false,
-        'shipping' => 30.63
       }
       result = auction.to_hash
       expect(result).to eq(hash)

@@ -27,6 +27,7 @@ module Goodwill
 
     def in_progress
       in_progress_page = mechanize.get(OPEN_ORDERS_URL)
+      require 'pry'
       Parallel.map(in_progress_page.search('#my-auctions-table > tbody > tr'), in_threads: @threads) do |row|
         Goodwill::BiddingAuction.new(itemid_from_open_order_row(row), mechanize)
       end
@@ -36,7 +37,7 @@ module Goodwill
       search_page = mechanize.get(SEARCH_URL + item_title)
       pages(total_items(search_page)).times.map do |i|
         search_page = search_page.link_with(text: '>').click unless i == 0
-        Parallel.map(search_page.search('#search-results > div > section > ul.products > li'), in_threads: @threads) do |row|
+        Parallel.map(search_page.search('#search-results > div > section > ul.products > li'), in_threads: 1) do |row|
           Goodwill::Auction.new(itemid_from_search_row(row))
         end
       end.flatten
