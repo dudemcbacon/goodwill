@@ -37,7 +37,7 @@ describe Goodwill::Account do
     end
 
     it 'should be able to get a list of auctions in progress' do
-      auctions = YAML.safe_load(File.open('./spec/fixtures/auctions.yaml'))
+      auctions = YAML.safe_load(File.open('./spec/fixtures/auctions.yaml'), [Goodwill::BiddingAuction, DateTime, Time])
 
       @account = Goodwill::Account.new('foo', 'bar')
       result = @account.in_progress
@@ -60,7 +60,7 @@ describe Goodwill::Account do
     end
 
     it 'should be able to search for auctions' do
-      auctions = YAML.safe_load(File.open('./spec/fixtures/google_search_results.yaml'))
+      auctions = YAML.safe_load(File.open('./spec/fixtures/google_search_results.yaml'), [Goodwill::Auction, DateTime, Time])
 
       @account = Goodwill::Account.new('foo', 'bar')
       result = @account.search('google home')
