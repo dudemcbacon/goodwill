@@ -9,3 +9,6 @@ Metrics/LineLength:
 
 Metrics/MethodLength:
   Max: 20
+
+Style/DateTime:
+  Enabled: false

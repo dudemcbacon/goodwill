@@ -1,4 +1,4 @@
-# coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'goodwill/version'
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   else
-    fail 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
+    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -35,9 +35,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'travis'
   spec.add_development_dependency 'webmock'
-  spec.add_dependency 'parallel', '~> 1.6'
   spec.add_dependency 'highline', '~> 1.7'
   spec.add_dependency 'mechanize', '~> 2.7'
+  spec.add_dependency 'parallel', '~> 1.6'
   spec.add_dependency 'table_print', '~> 1.5'
   spec.add_dependency 'thor', '~> 0.19'
 end
