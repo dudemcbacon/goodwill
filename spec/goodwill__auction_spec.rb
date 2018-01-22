@@ -23,7 +23,6 @@ describe Goodwill::Auction do
     it 'should be able to report the number of bids' do
       bids = 0
       result = auction.bids
-      expect(result.class).to eq(Integer)
       expect(result).to eq(bids)
     end
 
