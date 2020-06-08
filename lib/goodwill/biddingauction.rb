@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'goodwill/urlpaths'
 
 module Goodwill

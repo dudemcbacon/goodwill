@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Goodwill
-  VERSION = '0.3.0'.freeze
+  VERSION = '0.4.0'
 end

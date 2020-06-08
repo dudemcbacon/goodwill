@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mechanize'
 
 require 'goodwill/urlpaths'
@@ -35,6 +37,7 @@ module Goodwill
 
       def login
         return true if logged_in?
+
         @mechanize.get(LOGIN_URL) do |page|
           my_page = page.form_with(action: '/SignIn') do |f|
             f.Username = @username

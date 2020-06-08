@@ -1,14 +1,17 @@
-Documentation:
-  Enabled: false
+AllCops:
+  NewCops: enable
+
+Layout/LineLength:
+  Max: 150
 
 Metrics/AbcSize:
-  Enabled: false
+  Max: 30
 
-Metrics/LineLength:
+Metrics/BlockLength:
   Max: 200
 
 Metrics/MethodLength:
   Max: 20
 
-Style/DateTime:
+Style/Documentation:
   Enabled: false

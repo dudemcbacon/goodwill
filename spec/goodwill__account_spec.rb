@@ -1,70 +1,35 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
-require 'pry'
 
-IN_PROG = 'https://www.shopgoodwill.com/buyers/myShop/AuctionsInProgress.asp'.freeze
-
-include Goodwill::URLPaths
-
-describe Goodwill::Account do
-  before do
-    stub_request(:get, 'https://www.shopgoodwill.com/SignIn')
-      .to_return(File.new('spec/fixtures/SignIn.html_get'))
-
-    stub_request(:post, 'https://www.shopgoodwill.com/SignIn')
-      .to_return(File.new('spec/fixtures/SignIn.html_post'))
-  end
+describe Goodwill::Account, :vcr do
+  let(:account) { Goodwill::Account.new('foo', 'foo') }
 
   describe '#bid' do
-    before do
-      @account = Goodwill::Account.new('pants', 'pantspass')
-    end
-
     it 'should be able to bid on auctions'
   end
 
   describe '#in_progress' do
-    before do
-      stub_request(:get, 'https://www.shopgoodwill.com/MyShopgoodwill/AuctionsInProgress')
-        .to_return(File.new('spec/fixtures/in_progress_page'))
-
-      %w[48294656 48120725 48112189].each do |itemid|
-        stub_request(:get, "https://www.shopgoodwill.com/viewItem.asp?itemID=#{itemid}")
-          .to_return(File.new("spec/fixtures/#{itemid}"))
-
-        stub_request(:get, /CalculateShipping\?Country=United%20States&ItemId=#{Regexp.quote(itemid)}&State=OR&ZipCode=97222/)
-          .to_return(File.new("spec/fixtures/#{itemid}_shipping"))
-      end
-    end
-
     it 'should be able to get a list of auctions in progress' do
-      auctions = YAML.safe_load(File.open('./spec/fixtures/auctions.yaml'), [Goodwill::BiddingAuction, DateTime, Time])
-
-      @account = Goodwill::Account.new('foo', 'bar')
-      result = @account.in_progress
-      expect(result).to eq(auctions)
+      result = account.in_progress
+      expect(result.length).to eq(3)
+      expect(result.map(&:item)).to eq(['4 Macbook Pro 13" Laptops A1278 PARTS REPAIR',
+                                        'Kenwood R-5000 Communications Reciever',
+                                        '3 Working Amazon Kindle Fires'])
+      expect(result.map(&:itemid)).to eq(%w[94624392 94629344 94634162])
     end
   end
 
   describe '#search' do
-    before do
-      stub_request(:get, /Listings/)
-        .to_return(File.new('spec/fixtures/search_page'))
-
-      %w[48213986 48155521 48084603].each do |itemid|
-        stub_request(:get, "https://www.shopgoodwill.com/viewItem.asp?itemID=#{itemid}")
-          .to_return(File.new("spec/fixtures/#{itemid}"))
-
-        stub_request(:get, /CalculateShipping\?Country=United%20States&ItemId=#{Regexp.quote(itemid)}&State=OR&ZipCode=97222/)
-          .to_return(File.new("spec/fixtures/#{itemid}_shipping"))
-      end
-    end
-
     it 'should be able to search for auctions' do
-      auctions = YAML.safe_load(File.open('./spec/fixtures/google_search_results.yaml'), [Goodwill::Auction, DateTime, Time])
-
-      @account = Goodwill::Account.new('foo', 'bar')
-      result = @account.search('google home')
-      expect(result).to eq(auctions)
+      result = account.search('starrett')
+      expect(result.length).to eq(5)
+      expect(result.map(&:item)).to eq(['10 Assorted Metal Engineering Tools B.S. Starrett',
+                                        'Starrett Metal Precision Gage Block Set',
+                                        'Starrett Dial Test Indicator',
+                                        'Starrett Machinist Dial Caliper Micrometer in Box',
+                                        'Starrett Gage Amplifier & Gaging Head 715'])
+      expect(result.map(&:itemid)).to eq(%w[94482102 94545401 94570343 94651589 94811058])
     end
   end
 end
