@@ -15,17 +15,7 @@ module Goodwill
     include CSSPaths
     include URLPaths
 
-    attr_reader :item_page
-
-    attr_reader :bids
-    attr_reader :current
-    attr_reader :end
-    attr_reader :href
-    attr_reader :item
-    attr_reader :itemid
-    attr_reader :seller
-    attr_reader :shipping
-    attr_reader :type
+    attr_reader :item_page, :bids, :current, :end, :href, :item, :itemid, :seller, :shipping, :type
 
     def initialize(itemid, zipcode = '97222', state = 'OR', country = 'US')
       @itemid = itemid

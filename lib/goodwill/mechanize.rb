@@ -17,13 +17,11 @@ module Goodwill
         @username ||= nil
       end
 
-      attr_writer :username
+      attr_writer :username, :password
 
       def password
         @password ||= nil
       end
-
-      attr_writer :password
 
       def logged_in?
         @logged_in ||= false

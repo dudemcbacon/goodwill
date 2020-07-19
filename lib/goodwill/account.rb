@@ -65,13 +65,14 @@ module Goodwill
       # -5 - bid less than minimum
       mechanize.get(BID_URL, params) do |page|
         res = JSON.parse(page.body)
-        if res['BidResult'] == 1
+        case res['BidResult']
+        when 1
           return true if res['BidResultMessage'].include?('Bid Received')
 
           return false if res['BidResultMessage'].include?('You have already been outbid.')
 
           raise Goodwill::BidError, res['BidResultMessage']
-        elsif res['BidResult'] == -5
+        when -5
           raise Goodwill::BidError, res['BidResultMessage']
         end
       end

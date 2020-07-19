@@ -6,19 +6,10 @@ module Goodwill
   class BiddingAuction < Auction
     include URLPaths
 
-    attr_reader :bidding
-    attr_reader :winning
-    attr_reader :max
+    attr_reader :bidding, :winning, :max, :current, :end, :href, :item, :itemid, :seller, :shipping
 
     # TODO: why do i need this?
     attr_reader :bids
-    attr_reader :current
-    attr_reader :end
-    attr_reader :href
-    attr_reader :item
-    attr_reader :itemid
-    attr_reader :seller
-    attr_reader :shipping
 
     def initialize(itemid, mechanize)
       super(itemid)
