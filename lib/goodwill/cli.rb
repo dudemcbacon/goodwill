@@ -7,6 +7,7 @@ module Goodwill
     class_option :verbose, type: :boolean
     class_option :username
     class_option :password
+    class_option :threads
 
     def initialize(*args)
       super
@@ -14,7 +15,8 @@ module Goodwill
 
       username = options[:username] || ask('Username:')
       password = options[:password] || ask('Password:') { |q| q.echo = false }
-      @account = Goodwill::Account.new(username, password)
+      threads = options[:threads].to_i || 10
+      @account = Goodwill::Account.new(username, password, threads)
     end
 
     desc 'auctions', "List all auctions you're currently bidding on"

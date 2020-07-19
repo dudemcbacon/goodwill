@@ -70,6 +70,9 @@ module Goodwill
       params = "?ZipCode=#{zipcode}&Country=#{country}&ItemId=#{itemid}&Quantity=1&_=#{DateTime.now.strftime('%s')}"
       page = mechanize.get(SHIPPING_URL + params)
       page.search(SHIPPING_PATH).text.split(': ').last.tr('$', '').to_f
+    rescue StandardError
+      puts "Timeout (#{e}), retrying in 1 second..."
+      retry
     end
 
     def parse_end_time
