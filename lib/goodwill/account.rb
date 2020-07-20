@@ -101,7 +101,8 @@ module Goodwill
     end
 
     def total_items(page)
-      page.search('//*[@id="search-results"]/div/div[1]/nav[1]/p').first.text.split(' of ')[1].split(' ').first.to_i
+      return 0 unless page.search(NO_ITEMS_FOUND_PATH).empty?
+      page.search(ITEMS_COUNT_PATH).first.text.split(' of ')[1].split(' ').first.to_i
     end
   end
 end

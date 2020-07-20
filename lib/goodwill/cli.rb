@@ -22,13 +22,23 @@ module Goodwill
     desc 'auctions', "List all auctions you're currently bidding on"
     def auctions
       say "Your current auctions:\n"
-      tp @account.in_progress
+      res = @account.in_progress
+      if res.empty?
+        puts 'No items found.'
+      else
+        tp res
+      end
     end
 
     desc 'search SEARCH', 'Search for auctions matching SEARCH'
     def search(search)
       say 'Your search results:'
-      tp @account.search(search)
+      res = @account.search(search)
+      if res.empty?
+        puts 'No items found.'
+      else
+        tp res
+      end
     end
 
     desc 'bid ITEMID MAXBID', 'Bid MAXBID on ITEMID'
